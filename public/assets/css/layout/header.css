@@ -1,0 +1,21 @@
+/* layout/header.css */
+#main-header {
+  display: flex;
+  padding: 0px 125px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-header__nav {
+  display: flex;
+  height: 35px;
+  align-items: flex-start;
+  gap: 10px;
+}
