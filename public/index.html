@@ -5,141 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design Showcase</title>
     <link rel="stylesheet" href="/public/assets/css/main.css">
-     <!-- <link rel="stylesheet" href="/public/assets/css/normalize.css"> -->
 </head>
 <body>
-    <!-- Header Section -->
-    <header id="main-header">
-        <div class="main-header__logo">
-            <img src="/public/assets/images/logos/hexahedron-dark.svg" alt="Hexahedron Logo">
-        </div>
-        <nav class="main-header__nav">
-            <a href="#" class="nav__link">Visit us</a>
-            <a href="#" class="nav__link">View on Browser</a>
-        </nav>
-    </header>
+    <section class="container">
+        <!-- Header Section -->
+        <header id="header">
+            <div class="header__logo">
+                <img src="/public/assets/images/logos/hexahedron-dark.svg" alt="Hexahedron Logo">
+            </div>
+            <nav class="header__nav">
+                <a href="#" class="nav__link">Visit us</a>
+                <a href="#" class="nav__link">View on Browser</a>
+            </nav>
+        </header>
+    </section>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="hero-section" class="container">
-            <div class="hero-text-box">
+        <section class="container" id="hero">
+            <div class="hero__text-box">
                 <h1>Become Profitable, Get More Sales</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="hero-buttons">
-                    <button>Contact us</button>
-                    <button>Get started</button>
+                <div class="hero__buttons">
+                    <button class="button button--primary">Contact us</button>
+                    <button class="button button--secondary">Get started</button>
                 </div>
             </div>
-            <div class="hero-image-box">
-                <img src="/public/assets/images/illus/planning-scaled.jpg" alt="Planning Illustration">
+            <div class="hero__image-box">
+                <img src="/public/assets/images/illus/planning-scaled.jpg" alt="Planning Illustration" id="hero__image">
             </div>
         </section>
 
         <!-- Business Logos Section -->
-        <section id="business-logos" class="container">
-            <div class="logos">
+        <section id="logos">
+            <div id="logos__images">
                 <img src="/public/assets/images/logos/3-portals.svg" alt="3 Portals Logo">
                 <img src="/public/assets/images/logos/alphawave.svg" alt="AlphaWave Logo">
                 <img src="/public/assets/images/logos/catalxg.svg" alt="CatalXG Logo">
                 <img src="/public/assets/images/logos/railspeed.svg" alt="RailSpeed Logo">
             </div>
-            <div class="logos-text">
+            <div class="logos__text">
                 <h2>We are Built For Clients Like Yours</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>Contact us</button>
+                <button class="button button--primary">Contact us</button>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features-section" class="container">
-            <div class="feature-item">
-                <img src="/public/assets/images/illus/at-the-office-pana.svg" alt="At the Office Illustration" class="feature-image">
-                <div class="feature-text">
+        <section class="features">
+            <div class="feature">
+                <img src="/public/assets/images/illus/at-the-office-pana.svg" alt="At the Office Illustration" class="feature__image">
+                <div class="feature__text">
                     <h3>Target Millions of New Customers</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>Start Free Trial</button>
+                    <button class="button button--secondary">Start Free Trial</button>
                 </div>
             </div>
-            <div class="feature-item">
-                <img src="/public/assets/images/illus/finance-bro.svg" alt="Finance Illustration" class="feature-image">
-                <div class="feature-text">
+            <div class="feature">
+                <img src="/public/assets/images/illus/finance-bro.svg" alt="Finance Illustration" class="feature__image">
+                <div class="feature__text">
                     <h3>Upgrade Your Performance Day to Day</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>Start Free Trial</button>
+                    <button class="button button--secondary">Start Free Trial</button>
                 </div>
             </div>
-            <div class="feature-item">
-                <img src="/public/assets/images/illus/currency-bro.svg" alt="Currency Illustration" class="feature-image">
-                <div class="feature-text">
+            <div class="feature">
+                <img src="/public/assets/images/illus/currency-bro.svg" alt="Currency Illustration" class="feature__image">
+                <div class="feature__text">
                     <h3>Get Paid Faster With No Efforts</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>Start Free Trial</button>
+                    <button class="button button--secondary">Start Free Trial</button>
                 </div>
             </div>
         </section>
 
         <!-- Stats Section -->
-        <section id="stats-section" class="container stats-container">
-            <div class="stat-item">
+        <section class="stats">
+            <div class="stat">
                 <h3>100%</h3>
                 <p>Client Satisfaction</p>
             </div>
-            <div class="stat-item">
+            <div class="stat">
                 <h3>20k+</h3>
                 <p>Regular Customers</p>
             </div>
-            <div class="stat-item">
+            <div class="stat">
                 <h3>500k+</h3>
                 <p>Successful Deliveries</p>
             </div>
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonials-section" class="container">
-            <header class="testimonials-header">
+        <section class="testimonials">
+            <header class="testimonials__header">
                 <h2>Customer is Our Priority</h2>
-                <div class="testimonial-controls">
-                    <button>&lt;-</button>
-                    <button>-&gt;</button>
+                <div class="testimonials__controls">
+                    <button class="control-button">&lt;-</button>
+                    <button class="control-button">-&gt;</button>
                 </div>
             </header>
-            <div class="testimonial-items">
-                <div class="testimonial-item">
-                    <img src="/public/assets/images/icons/quote-svgrepo-com.svg" alt="Quote Icon">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <div class="testimonials__items">
+                <div class="testimonial">
+                    <img src="/public/assets/images/icons/quote-svgrepo-com.svg" alt="Quote Icon" class="testimonial__quote-icon">
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                 </div>
-                <div class="customer-profiles">
+                <div class="testimonial__profiles">
                     <div class="profile">
-                        <img src="/public/assets/images/avatars/avatar-1.svg" alt="Fulano Santos" class="photo">
-                        <div class="about">
-                            <p class="name">Fulano Santos</p>
-                            <p class="position">Position</p>
+                        <img src="/public/assets/images/avatars/avatar-1.svg" alt="Fulano Santos" class="profile__photo">
+                        <div class="profile__info">
+                            <p class="profile__name">Fulano Santos</p>
+                            <p class="profile__position">Position</p>
                         </div>
                     </div>
-                    <!-- Repeat for additional profiles as needed -->
+                    <!-- Additional profiles can be added here -->
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer id="main-footer" class="container">
-        <div class="social-media">
-            <img src="/public/assets/images/icons/icons8-facebook.svg" alt="Facebook">
-            <img src="/public/assets/images/icons/icons8-instagram.svg" alt="Instagram">
-            <img src="/public/assets/images/icons/icons8-linkedin.svg" alt="LinkedIn">
-            <img src="/public/assets/images/icons/icons8-twitterx.svg" alt="Twitter">
+    <footer class="footer">
+        <div class="footer__social-media">
+            <img src="/public/assets/images/icons/icons8-facebook.svg" alt="Facebook" class="social-icon">
+            <img src="/public/assets/images/icons/icons8-instagram.svg" alt="Instagram" class="social-icon">
+            <img src="/public/assets/images/icons/icons8-linkedin.svg" alt="LinkedIn" class="social-icon">
+            <img src="/public/assets/images/icons/icons8-twitterx.svg" alt="Twitter" class="social-icon">
         </div>
-        <div class="legal-and-settings">
-            <div class="manage-email">
+        <div class="footer__info">
+            <div class="footer__email-settings">
                 <h3>Manage Email Settings</h3>
                 <p>If you believe this has been sent to you in error, please safely unsubscribe here.</p>
             </div>
-            <div class="legal-info">
+            <div class="footer__legal">
                 <p>© 2024 Company. All rights reserved. Registered Office: Company name, 123 street name, city name, Country name, Registered number: 123456</p>
                 <p>Made with ♥️ by Nicolas Soares. Design by <a href="https://www.freepik.com" target="_blank">Freepik</a></p>
-                <img src="/public/assets/images/logos/hexahedron-dark.svg" alt="Hexahedron Logo">
+                <img src="/public/assets/images/logos/hexahedron-dark.svg" alt="Hexahedron Logo" class="footer__logo">
             </div>
         </div>
     </footer>
