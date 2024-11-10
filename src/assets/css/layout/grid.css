@@ -1,0 +1,51 @@
+/* layout/grid.css */
+
+.header {
+    grid-area: header;
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header header header header"
+    "logos logos logos logos logos logos"
+    "stat1 stat1 stat2 stat2 stat3 stat3";
+    justify-content: space-evenly;
+  gap: 20px;
+}
+
+.logos {
+    grid-area: logos;
+    padding: 0 19%;
+}
+
+.logos > div{
+    display: flex;
+    padding: 55px 94px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.stat1, .stat2, .stat3 {
+  display: grid; /* Usando grid para o alinhamento centralizado */
+  place-items: center; /* Centraliza o conteúdo em ambas as direções (horizontal e vertical) */
+}
+
+.stat1 {
+  grid-area: stat1;
+}
+
+.stat2 {
+  grid-area: stat2;
+}
+
+.stat3 {
+  grid-area: stat3;
+}
+
+
