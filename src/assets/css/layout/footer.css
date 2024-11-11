@@ -1,0 +1,61 @@
+/* Reset básico */
+
+footer {
+  background-color: #DFECFC;
+  padding: 40px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.email-settings,
+.copyright {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Área azul na parte inferior do footer */
+.footer-bottom {
+  background-color: #0073e6; /* Cor azul */
+  height: 25px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Ajuste de padding para acomodar a área azul */
+footer {
+  padding-bottom: 90px; /* Considerando a altura da área azul e espaçamento */
+}
+
+/* Responsivo para telas maiores */
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+}

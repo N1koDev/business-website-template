@@ -1,6 +1,6 @@
 /* layout/grid.css */
 
-.header {
+header {
     grid-area: header;
     display: flex; 
     justify-content: space-between;
@@ -14,7 +14,9 @@
     "intro-text intro-text intro-text intro-image intro-image intro-image"
     "logos logos logos logos logos logos"
     "description description description description description description"
-    "feature-image feature-image feature-image feature-text feature-text feature-text"
+    "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
+    "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
+    "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
     "stats stats stats stats stats stats";
   justify-content: space-between;
   gap: 20px;
@@ -80,6 +82,69 @@
 
 /*  */
 
+.feature-item1 {
+    grid-area: feature-item1;
+}
+
+.feature-item2 {
+    grid-area: feature-item2;
+}
+
+.feature-item3 {
+    grid-area: feature-item3;
+}
+
+.feature-item4 {
+    grid-area: feature-item4;
+}
+
+
+.feature-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.feature-item .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Alternar ordem: imagem à esquerda em ímpares, imagem à direita em pares */
+.feature-item:nth-child(odd) {
+    grid-template-columns: 1fr 2fr; /* Imagem à esquerda, texto à direita */
+}
+
+.feature-item:nth-child(even) {
+    grid-template-columns: 2fr 1fr; /* Texto à esquerda, imagem à direita */
+    direction: rtl; /* Inverte o fluxo */
+}
+
+.feature-item:nth-child(even) .text-content {
+    direction: ltr; /* Corrige o texto de volta para o alinhamento normal */
+}
+
+
+
+
+
+/*  */
+
 .stats-section {
     grid-area: stats;
     display: grid;
@@ -100,5 +165,3 @@
   place-items: center; /* Centraliza o conteúdo em ambas as direções (horizontal e vertical) */
   /* background: #DFECFC; */
 }
-
-

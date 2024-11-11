@@ -1,8 +1,12 @@
 /* base/typography.css */
 
-body {
-  font-family: var(--font-family-main);
-  font-size: var(--font-size-base);
-  color: #000000;
+/* Typography */
+:root {
+    --font-family-google: 'Roboto', sans-serif;
+    --font-family-apple: 'SF Pro', sans-serif
+    --font-family-secondary:
+    
 }
+
+
 

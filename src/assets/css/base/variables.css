@@ -1,10 +1,6 @@
 /* base/variables.css */
 :root {
+    /* */
   --primary-color: #1F81DA;
   --secondary-color: #FFFFFF;
-  --font-family-main: 'Roboto', sans-serif;
-  --font-size-base: 16px;
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
 }
