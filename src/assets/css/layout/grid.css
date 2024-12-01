@@ -17,7 +17,9 @@ header {
     "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
     "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
     "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
-    "stats stats stats stats stats stats";
+    "stats stats stats stats stats stats"
+    "customers-title customers-title customers-title customers-title nav-prev nav-next"
+    ;
   justify-content: space-between;
   gap: 20px;
 }
@@ -164,4 +166,17 @@ header {
   display: grid; /* Usando grid para o alinhamento centralizado */
   place-items: center; /* Centraliza o conteúdo em ambas as direções (horizontal e vertical) */
   /* background: #DFECFC; */
+}
+
+
+.customers-title {
+    grid-area: customers-title;
+}
+
+.nav-prev {
+  grid-area: nav-prev;
+}
+
+.nav-next {
+  grid-area: nav-next;
 }
