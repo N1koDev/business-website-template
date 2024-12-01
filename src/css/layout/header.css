@@ -1,4 +1,12 @@
 /* layout/header.css */
+
+header {
+  grid-area: header;
+  display: flex; 
+  justify-content: space-between;
+  padding: 20px;
+}
+
 #header__box {
   display: flex;
   padding: 0px 60px;

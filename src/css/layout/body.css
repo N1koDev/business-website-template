@@ -1,0 +1,8 @@
+/* layout/body.css */
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden; /* Garante que nada transborde horizontalmente */
+}

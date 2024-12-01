@@ -1,27 +1,20 @@
 /* layout/grid.css */
 
-header {
-    grid-area: header;
-    display: flex; 
-    justify-content: space-between;
-    padding: 20px;
-}
-
 .grid-container {
   display: grid;
   grid-template-areas: 
-    "header header header header header header"
-    "intro-text intro-text intro-text intro-image intro-image intro-image"
-    "logos logos logos logos logos logos"
-    "description description description description description description"
-    "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
-    "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
-    "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
-    "stats stats stats stats stats stats"
-    "customers-title customers-title customers-title customers-title nav-prev nav-next"
-    ;
-  justify-content: space-between;
+      "header header header header header header"
+      "intro-text intro-text intro-text intro-image intro-image intro-image"
+      "logos logos logos logos logos logos"
+      "description description description description description description"
+      "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
+      "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
+      "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
+      "stats stats stats stats stats stats"
+      "customers-title customers-title customers-title customers-title nav-prev nav-next"
+      "testimonial1 testimonial1 testimonial2 testimonial2 testimonial3 testimonial3";
   gap: 20px;
+  justify-content: center;
 }
 
 .intro-text {
@@ -154,7 +147,6 @@ header {
     gap: 20px;
     background-color: #DFECFC;
     padding: 20px;
-    border-radius: 15px;
 }
 
 .stat1, .stat2, .stat3 {
@@ -179,4 +171,16 @@ header {
 
 .nav-next {
   grid-area: nav-next;
+}
+
+.testimonial1, .testimonial2, .testimonial3 {
+  grid-area: testimonial1;
+}
+
+.testimonial2 {
+  grid-area: testimonial2;
+}
+
+.testimonial3 {
+  grid-area: testimonial3;
 }
