@@ -3,76 +3,41 @@
 .grid-container {
   display: grid;
   grid-template-areas: 
-      "header header header header header header"
-      "intro-text intro-text intro-text intro-image intro-image intro-image"
-      "logos logos logos logos logos logos"
-      "description description description description description description"
-      "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
-      "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
-      "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
-      "stats stats stats stats stats stats"
-      "customers-title customers-title customers-title customers-title nav-prev nav-next"
-      "testimonial1 testimonial1 testimonial2 testimonial2 testimonial3 testimonial3";
+    "header header header header header header"
+    "intro-text intro-text intro-text intro-image intro-image intro-image"
+    "logos logos logos logos logos logos"
+    "description description description description description description"
+    "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
+    "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
+    "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
+    "stats stats stats stats stats stats"
+    "customers-title customers-title customers-title customers-title nav-prev nav-next"
+    "testimonial1 testimonial1 testimonial2 testimonial2 testimonial3 testimonial3";
   gap: 20px;
   justify-content: center;
+  grid-template-columns: repeat(6, 1fr); /* Define 6 colunas de tamanho igual */
 }
+
+/* hero-section */
 
 .intro-text {
   grid-area: intro-text;
-  align-self: center;
-  padding: 0 10%;
 }
 
 .intro-image {
   grid-area: intro-image;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 560px;
-  height: 322.824px;
 }
-
-.intro-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
 
 /*  */
 
 .logos {
     grid-area: logos;
-    padding: 0 19%;
-    position: relative; /* Necessário para a pseudo-classe ::before */
-}
-
-.logos > div{
-    display: flex;
-    padding: 55px 94px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 15px;
-    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.35);
-    background: white;
-}
-
-.logos::before {
-    content: "";
-    position: absolute;
-    top: 50%; /* Inicia o background a partir do meio da seção logos */
-    left: 0;
-    right: 0;
-    bottom: -150%; /* Alonga o fundo para cobrir toda a seção description */
-    background-color: #007bff; /* Escolha a cor ou imagem desejada para o fundo */
-    z-index: -1; /* Coloca o fundo atrás do conteúdo da seção */
 }
 
 /*  */
 
 .description {
   grid-area: description;
-  text-align: center;
-  padding: 20px;
 }
 
 /*  */
@@ -93,33 +58,6 @@
     grid-area: feature-item4;
 }
 
-
-.feature-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.feature-item img {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.feature-item .text-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.feature-item button {
-    align-self: flex-start;
-    padding: 10px 20px;
-    margin-top: 10px;
-}
-
 /* Alternar ordem: imagem à esquerda em ímpares, imagem à direita em pares */
 .feature-item:nth-child(odd) {
     grid-template-columns: 1fr 2fr; /* Imagem à esquerda, texto à direita */
@@ -134,10 +72,6 @@
     direction: ltr; /* Corrige o texto de volta para o alinhamento normal */
 }
 
-
-
-
-
 /*  */
 
 .stats-section {
@@ -145,8 +79,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    background-color: #DFECFC;
-    padding: 20px;
 }
 
 .stat1, .stat2, .stat3 {
@@ -159,7 +91,6 @@
   place-items: center; /* Centraliza o conteúdo em ambas as direções (horizontal e vertical) */
   /* background: #DFECFC; */
 }
-
 
 .customers-title {
     grid-area: customers-title;

@@ -1,0 +1,26 @@
+.feature-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.feature-item img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feature-item .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-item button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  margin-top: 10px;
+}

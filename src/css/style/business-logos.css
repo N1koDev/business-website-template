@@ -1,0 +1,27 @@
+
+
+.logos {
+  grid-area: logos;
+  position: relative; /* Necessário para a pseudo-classe ::before */
+}
+
+.logos > div{
+  display: flex;
+  padding: 55px 94px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: white;
+}
+
+.logos::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Inicia o background a partir do meio da seção logos */
+  left: 0;
+  right: 0;
+  bottom: -150%; /* Alonga o fundo para cobrir toda a seção description */
+  background-color: #007bff; /* Escolha a cor ou imagem desejada para o fundo */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo da seção */
+}
