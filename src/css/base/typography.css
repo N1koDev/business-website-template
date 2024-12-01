@@ -1,12 +1,21 @@
-/* base/typography.css */
-
-/* Typography */
-:root {
-    --font-family-google: 'Roboto', sans-serif;
-    --font-family-apple: 'SF Pro', sans-serif
-    --font-family-secondary:
-    
+/* Estilos Específicos */
+.display-large {
+    font-family: var(--Display-Large-Font, Roboto);
+    font-size: var(--Display-Large-Size, 57px);
+    line-height: var(--Display-Large-Line-Height, 64px);
+    letter-spacing: var(--Display-Large-Tracking, -0.25px);
 }
 
+.display-medium {
+    font-family: var(--Display-Medium-Font, Roboto);
+    font-size: var(--Display-Medium-Size, 45px);
+    line-height: var(--Display-Medium-Line-Height, 52px);
+    letter-spacing: var(--Display-Medium-Tracking, 0px);
+}
 
-
+.display-small {
+font-family: var(--Display-Small-Font, Roboto);
+font-size: var(--Display-Small-Size, 36px);
+line-height: var(--Display-Small-Line-Height, 44px);
+letter-spacing: var(--Display-Small-Tracking, 0px);
+}
