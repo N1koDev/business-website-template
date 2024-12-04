@@ -10,34 +10,88 @@
     /* Fonts */
     --font-primary: "Roboto", sans-serif;
 
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+
+
     /* Display Styles */
     --display-large-size: 57px;
     --display-large-line-height: 64px;
     --display-large-letter-spacing: -0.25px;
+    --display-large-font-weight: var(--font-weight-regular);
 
     --display-medium-size: 45px;
     --display-medium-line-height: 52px;
     --display-medium-letter-spacing: 0px;
+    --display-medium-font-weight: var(--font-weight-regular);
 
     --display-small-size: 36px;
     --display-small-line-height: 44px;
     --display-small-letter-spacing: 0px;
+    --display-small-font-weight: var(--font-weight-regular);
 
     /* Headline Styles */
     --headline-large-size: 32px;
     --headline-large-line-height: 40px;
     --headline-large-letter-spacing: 0px;
+    --headline-large-font-weight: var(--font-weight-regular);
 
     --headline-medium-size: 28px;
     --headline-medium-line-height: 36px;
     --headline-medium-letter-spacing: 0px;
+    --headline-medium-font-weight: var(--font-weight-regular);
 
     --headline-small-size: 24px;
     --headline-small-line-height: 32px;
     --headline-small-letter-spacing: 0px;
+    --headline-small-font-weight: var(--font-weight-regular);
 
     /* Title Styles */
     --title-large-size: 22px;
     --title-large-line-height: 28px;
     --title-large-letter-spacing: 0px;
+    --title-large-font-weight: var(--font-weight-regular);
+
+    --title-medium-size: 16px;
+    --title-medium-line-height: 24px;
+    --title-medium-letter-spacing: 0.15px;
+    --title-medium-font-weight: var(--font-weight-medium);
+
+    --title-small-size: 14px;
+    --title-small-line-height: 20px; /* 142.857% */
+    --title-small-letter-spacing: 0.1px;
+    --title-small-font-weight: var(--font-weight-medium);
+
+    /* Label Styles */
+    --label-large-size: 14px;
+    --label-large-line-height: 20px;
+    --label-large-letter-spacing: 0.1px;
+    --label-large-font-weight: var(--font-weight-medium);
+
+    --label-medium-size: 12px;
+    --label-medium-line-height: 16px; /* 133.333% */
+    --label-medium-letter-spacing: 0.5px;
+    --label-medium-font-weight: var(--font-weight-medium);
+
+    --label-small-size: 11px;
+    --label-small-line-height: 16px;
+    --label-small-letter-spacing: 0.5px;
+    --label-small-font-weight: var(--font-weight-medium);
+
+    /* Body Styles */
+    --body-large-size: 16px;
+    --body-large-line-height: 24px; /* 150% */
+    --body-large-letter-spacing: 0.5px;
+    --body-large-font-weight: var(--font-weight-regular);
+
+    --body-medium-size: 14px;
+    --body-medium-line-height: 20px; /* 142.857% */
+    --body-medium-letter-spacing: 0.25px;
+    --body-medium-font-weight: var(--font-weight-regular);
+
+    --body-small-size: 12px;
+    --body-small-line-height: 16px; /* 133.333% */
+    --body-small-letter-spacing: 0.4px;
+    --body-small-font-weight: var(--font-weight-regular);
 }
