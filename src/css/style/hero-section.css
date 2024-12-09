@@ -1,2 +1,22 @@
 /* layout/grid.css */
 
+.intro-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 35px
+}
+
+.intro_image {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Faz a section ocupar toda a altura */
+    overflow: hidden; /* Garante que nada ultrapasse os limites da section */
+}
+
+img {
+  max-width: 100%; /* Garante que a largura da imagem não ultrapasse a largura da section */
+  max-height: 100%; /* Garante que a altura da imagem não ultrapasse a altura da section */
+  object-fit: contain; /* Ajusta a imagem proporcionalmente */
+}
