@@ -6,4 +6,5 @@
 @import url('layout/header.css');
 @import url('layout/body.css');
 @import url('layout/footer.css');
-@import url('style/hero-section.css')
+@import url('style/hero-section.css');
+@import url('components/buttons.css')
