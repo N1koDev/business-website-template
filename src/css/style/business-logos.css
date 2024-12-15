@@ -1,27 +1,58 @@
-
+/* layout/business-logos.css */
 
 .logos {
-  grid-area: logos;
-  position: relative; /* Necessário para a pseudo-classe ::before */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  height: 100%;            /* Garante que a div pai tenha altura suficiente (ou defina uma altura fixa) */
+  position: relative;
+  padding-top: 50px;
 }
 
-.logos > div{
+.logos > div {
   display: flex;
   padding: 55px 94px;
-  align-items: center;
-  justify-content: space-evenly;
+  width: auto;             /* Ajusta a largura automaticamente */
+  height: auto;            /* Ajusta a altura automaticamente */
+  align-items: center;     /* Alinha os itens verticalmente dentro da div */
+  gap: 40px;               /* Garante um espaço de 40px entre os logos */
   border-radius: 15px;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: white;
+  background-color: var(--secondary-color);   /* Altere para a cor ou imagem desejada */
 }
 
 .logos::before {
   content: "";
   position: absolute;
-  top: 50%; /* Inicia o background a partir do meio da seção logos */
+  top: 60%; /* Inicia o fundo a partir do meio da seção logos */
   left: 0;
   right: 0;
-  bottom: -150%; /* Alonga o fundo para cobrir toda a seção description */
+  bottom: -110%; /* Alonga o fundo para cobrir toda a seção description */
   background-color: #007bff; /* Escolha a cor ou imagem desejada para o fundo */
   z-index: -1; /* Coloca o fundo atrás do conteúdo da seção */
 }
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 12.5% 50px; /* 50px em cima, 20px nas laterais e 0px embaixo */
+    gap: 25px;
+}
+
+.description h1 {
+    font-weight: bold; /* Aplica negrito ao texto do <h1> */
+    color: var(--secondary-color);
+}
+
+.description p {
+    font-weight: 500; /* Aplica negrito ao texto do <p> */
+    color: var(--secondary-color);
+}
+
+.description button {
+    font-size: 25px;
+    font-weight: 500;
+}
+
