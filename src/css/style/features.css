@@ -19,6 +19,12 @@
   gap: 10px;
 }
 
+.feature-item .feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .feature-item button {
   align-self: flex-start;
   padding: 10px 20px;
