@@ -1,22 +1,37 @@
-/* layout/grid.css */
+/* layout/hero-section.css */
 
 .intro-text {
+    grid-area: intro-text; /* Mapeia para a área do grid */
+    align-self: start; /* Alinha ao início da célula verticalmente */
+    justify-self: start; /* Alinha à esquerda da célula horizontalmente */
     display: flex;
-    flex: 1;
     flex-direction: column;
-    gap: 35px
+    align-items: flex-start;
+    gap: 2rem; /* Responsivo conforme ajustes */
+    padding-right: 31.5px;
+    padding-top: 140px;
 }
 
-.intro_image {
+#intro-highlight {
+    color: var(--primary-color);
+}
+
+.intro-image {
+    grid-area: intro-image; /* Mapeia para a área do grid */
+    align-self: start; /* Alinha ao início da célula verticalmente */
+    justify-self: end; /* Alinha à direita da célula horizontalmente */
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100%; /* Faz a section ocupar toda a altura */
-    overflow: hidden; /* Garante que nada ultrapasse os limites da section */
+    justify-content: center;
+    align-items: center;
+    max-width: 567px;
+    height: auto;
+    padding-left: 31.5px;
+    padding-top: 140px;
 }
 
-img {
-  max-width: 100%; /* Garante que a largura da imagem não ultrapasse a largura da section */
-  max-height: 100%; /* Garante que a altura da imagem não ultrapasse a altura da section */
-  object-fit: contain; /* Ajusta a imagem proporcionalmente */
+#planning-img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do seu container */
+    max-width: 560px; /* Define o tamanho máximo da imagem */
+    height: 322.82px;
+    object-fit: cover; /* Faz com que a imagem cubra todo o container, mantendo a proporção */
 }

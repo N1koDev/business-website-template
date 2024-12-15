@@ -1,21 +1,21 @@
 /* layout/grid.css */
 
 .grid-container {
-  display: grid;
-  grid-template-areas: 
-    "header header header header header header"
-    "intro-text intro-text intro-text intro-image intro-image intro-image"
-    "logos logos logos logos logos logos"
-    "description description description description description description"
-    "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
-    "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
-    "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
-    "stats stats stats stats stats stats"
-    "customers-title customers-title customers-title customers-title nav-prev nav-next"
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header"
+        "intro-text intro-text intro-text intro-image intro-image intro-image"
+        "logos logos logos logos logos logos"
+        "description description description description description description"
+        "feature-item1 feature-item1 feature-item1 feature-item1 feature-item1 feature-item1" 
+        "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
+        "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
+        "stats stats stats stats stats stats"
+        "customers-title customers-title customers-title customers-title nav-prev nav-next"
     "testimonial1 testimonial1 testimonial2 testimonial2 testimonial3 testimonial3";
-  gap: 20px;
-  justify-content: center;
-  grid-template-columns: repeat(6, 1fr); /* Define 6 colunas de tamanho igual */
+    grid-row-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr); /* Define 6 colunas de tamanho igual */
 }
 
 /* hero-section */
