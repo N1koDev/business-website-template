@@ -1,32 +1,62 @@
 .feature-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  align-items: center;
-  margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    max-height: 460px; /* Limite máximo de altura da seção */
 }
 
-
-.feature-item img {
-  width: 100%;
-  max-width: 100%;
-  border-radius: 10px;
+/* Alternar ordem entre imagem e texto */
+.feature-item:nth-child(odd) {
+    flex-direction: row; /* Imagem à esquerda, texto à direita */
 }
 
-.feature-item .text-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
-.feature-item .feature-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.feature-text {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Garante que os itens não se estiquem */
+    gap: 3.125rem;
 }
 
-.feature-item button {
-  align-self: flex-start;
-  padding: 10px 20px;
-  margin-top: 10px;
+.feature-text .button {
+    width: auto;  /* Impede que o botão ocupe toda a largura */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+}
+
+.text-content .display-large {
+    font-weight: var(--font-weight-semibold); /* Aplica o bold somente nesta seção */
+}
+
+.feature-image {
+    height: 460px; /* Isso faz a imagem ocupar a altura disponível */
+}
+
+.feature-item:nth-child(odd) .feature-image {
+    justify-content: right; /* Alinha a imagem à esquerda em itens ímpares */
+}
+
+.feature-item:nth-child(even) .feature-image {
+    justify-content: left; /* Alinha a imagem à direita em itens pares */
+}
+
+.feature-image img {
+    object-fit: contain; /* Mantém a proporção da imagem sem cortar */
+    height: 100%; /* Limita a altura máxima */
+}
+
+.feature-highlight {
+    color: var(--primary-color);
 }

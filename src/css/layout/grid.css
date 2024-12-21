@@ -54,24 +54,6 @@
     grid-area: feature-item3;
 }
 
-.feature-item4 {
-    grid-area: feature-item4;
-}
-
-/* Alternar ordem: imagem à esquerda em ímpares, imagem à direita em pares */
-.feature-item:nth-child(odd) {
-    grid-template-columns: 1fr 2fr; /* Imagem à esquerda, texto à direita */
-}
-
-.feature-item:nth-child(even) {
-    grid-template-columns: 2fr 1fr; /* Texto à esquerda, imagem à direita */
-    direction: rtl; /* Inverte o fluxo */
-}
-
-.feature-item:nth-child(even) .text-content {
-    direction: ltr; /* Corrige o texto de volta para o alinhamento normal */
-}
-
 /*  */
 
 .stats-section {

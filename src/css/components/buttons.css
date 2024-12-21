@@ -3,13 +3,8 @@
 .button { 
     display: inline-flex;
     height: 2.5rem;
-    flex-direction: row; /* Ícone e texto em linha */
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
     padding: 0.625rem 1.5rem;
-    flex: 1 0 0;
-    align-self: stretch;
     flex-shrink: 0;
     border-radius: 6.25rem;
     background-color: var(--primary-color); /* Cor de fundo do botão */

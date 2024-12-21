@@ -13,6 +13,8 @@
     /* Font Weights */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
 
     /* Display Styles */
@@ -94,4 +96,8 @@
     --body-small-line-height: 16px; /* 133.333% */
     --body-small-letter-spacing: 0.4px;
     --body-small-font-weight: var(--font-weight-regular);
+    
+    
+    --feature-gap: 3.125rem;
+    --image-height: 460px;
 }
