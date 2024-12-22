@@ -11,9 +11,9 @@
         "feature-item2 feature-item2 feature-item2 feature-item2 feature-item2 feature-item2"
         "feature-item3 feature-item3 feature-item3 feature-item3 feature-item3 feature-item3" 
         "stats stats stats stats stats stats"
-        "customers-title customers-title customers-title customers-title nav-prev nav-next"
-    "testimonial1 testimonial1 testimonial2 testimonial2 testimonial3 testimonial3";
-    grid-row-gap: 20px;
+        "customers-title customers-title customers-title customers-title customers-title carousel-controls"
+        "testimonials testimonials testimonials testimonials testimonials testimonials";
+    grid-row-gap: 30px;
     justify-content: center;
     grid-template-columns: repeat(6, 1fr); /* Define 6 colunas de tamanho igual */
 }
@@ -74,26 +74,15 @@
   /* background: #DFECFC; */
 }
 
-.customers-title {
+#customers-title {
     grid-area: customers-title;
 }
 
-.nav-prev {
-  grid-area: nav-prev;
+#carousel__controls {
+    grid-area: carousel-controls;
+    justify-content: end;
 }
 
-.nav-next {
-  grid-area: nav-next;
-}
-
-.testimonial1, .testimonial2, .testimonial3 {
-  grid-area: testimonial1;
-}
-
-.testimonial2 {
-  grid-area: testimonial2;
-}
-
-.testimonial3 {
-  grid-area: testimonial3;
+.testimonials {
+    grid-area: testimonials;
 }

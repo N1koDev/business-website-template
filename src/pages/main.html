@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design Showcase</title>
     <link rel="stylesheet" href="/src/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     
@@ -111,47 +112,69 @@
             </div>
         </section>
         
-        <h1 class="customers-title">Customer is our Priority</h1>
+        <h1 id="customers-title" class="display-large">Customer is our Priority</h1>
         
-        <button class="nav-prev">←</button> <!-- Botão anterior -->
-        <button class="nav-next">→</button> <!-- Botão próximo -->
-        
+        <div id="carousel__controls">
+            <button class="icon-button carousel__control-button--prev" id="nav-prev">
+                <div class="icon-button__container">
+                    <div class="icon-button__state-layer">
+                        <div class="icon-button__icon">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            
+            <button class="icon-button carousel__control-button--next" id="nav-next">
+                <div class="icon-button__container">
+                    <div class="icon-button__state-layer">
+                        <div class="icon-button__icon">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </div>
 
-        <div class="testimonial1">
-            <div class="quote">“</div>
-            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
-            <div class="author">
-                <img src="/public/assets/images/avatars/avatar-1.svg" alt="Fulano Santos">
-                <div class="author-info">
-                    <strong>Fulano Santos</strong>
-                    <span>Position</span>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <object type="image/svg+xml" data="/public/assets/images/icons/quote.svg" class="svg-icon"></object>
+                <div class="title-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
+                <div class="author">
+                    <img src="/public/assets/images/avatars/avatar-1.svg" alt="Fulano Santos">
+                    <div class="author-info">
+                        <h5 class="title-large">Fulano Santos</h5>
+                        <p class="label-large">Position</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="testimonial2">
-            <div class="quote">“</div>
-            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
-            <div class="author">
-                <img src="/public/assets/images/avatars/avatar-2.svg" alt="Sicrana Silva">
-                <div class="author-info">
-                    <strong>Sicrana Silva</strong>
-                    <span>Position</span>
+        
+            <div class="testimonial">
+                <object type="image/svg+xml" data="/public/assets/images/icons/quote.svg" class="svg-icon"></object>
+                <div class="title-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
+                <div class="author">
+                    <img src="/public/assets/images/avatars/avatar-2.svg" alt="Sicrana Silva">
+                    <div class="author-info">
+                        <h5 class="title-large">Sicrana Silva</h5>
+                        <p class="label-large">Position</p>
+                    </div>
                 </div>
             </div>
-        </div> <!-- Fechando corretamente -->
-    
-        <div class="testimonial3">
-            <div class="quote">“</div>
-            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
-            <div class="author">
-                <img src="/public/assets/images/avatars/avatar-3.svg" alt="Beltrana Alves">
-                <div class="author-info">
-                    <strong>Beltrana Alves</strong>
-                    <span>Position</span>
+        
+            <div class="testimonial">
+                <object type="image/svg+xml" data="/public/assets/images/icons/quote.svg" class="svg-icon"></object>
+                <div class="title-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</div>
+                <div class="author">
+                    <img src="/public/assets/images/avatars/avatar-3.svg" alt="Beltrana Alves">
+                    <div class="author-info">
+                        <h5 class="title-large">Beltrana Alves</h5>
+                        <p class="label-large">Position</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </div>
     
     <footer>
