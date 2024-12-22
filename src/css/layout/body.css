@@ -1,8 +1,16 @@
 /* layout/body.css */
 
 body {
-  padding: 0px 8.68%;
+  /* padding: 0px 8.68%; */
   box-sizing: border-box;
   max-width: 100vw;
   overflow-x: hidden; /* Garante que nada transborde horizontalmente */
 }
+
+/* header, .stats-section, .testimonials, footer {
+    padding: 0px 8.68%;
+}
+
+.intro-text {
+    padding-left: 8.68%;
+} */

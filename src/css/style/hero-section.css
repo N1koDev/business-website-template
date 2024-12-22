@@ -1,12 +1,10 @@
 /* layout/hero-section.css */
 
 .intro-text {
-    grid-area: intro-text; /* Mapeia para a área do grid */
-    align-self: start; /* Alinha ao início da célula verticalmente */
-    justify-self: start; /* Alinha à esquerda da célula horizontalmente */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: 2rem; /* Responsivo conforme ajustes */
     padding-right: 31.5px;
     padding-top: 140px;
@@ -14,24 +12,18 @@
 
 #intro-highlight {
     color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
 }
 
 .intro-image {
-    grid-area: intro-image; /* Mapeia para a área do grid */
-    align-self: start; /* Alinha ao início da célula verticalmente */
     justify-self: end; /* Alinha à direita da célula horizontalmente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 567px;
-    height: auto;
-    padding-left: 31.5px;
     padding-top: 140px;
+    height: auto;
+    max-width: 60vh;
 }
 
 #planning-img {
-    width: 100%; /* Ajusta a largura da imagem para 100% do seu container */
-    max-width: 560px; /* Define o tamanho máximo da imagem */
-    height: 322.82px;
+    width: 100%; /* Define o tamanho máximo da imagem */
+    height: 100%;
     object-fit: cover; /* Faz com que a imagem cubra todo o container, mantendo a proporção */
 }

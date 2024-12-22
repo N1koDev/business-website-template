@@ -38,6 +38,11 @@
     height: auto; /* Deixe a altura ser ajustada automaticamente */
 }
 
+.testimonial:not(:last-child) {
+    border-right: 2px solid var(--primary-color); /* Linha vertical entre os testimonials */
+    padding-right: 2rem; /* Adiciona espaçamento ao lado da linha */
+}
+
 .svg-icon {
     color: black; /* Altera a cor do SVG, se ele usar 'currentColor' */
     width: 36px;

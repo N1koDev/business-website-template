@@ -7,6 +7,7 @@
   height: 100%;            /* Garante que a div pai tenha altura suficiente (ou defina uma altura fixa) */
   position: relative;
   padding-top: 50px;
+  background: linear-gradient(to bottom, transparent 60%, var(--primary-color) 0%);
 }
 
 .logos > div {
@@ -21,17 +22,6 @@
   background-color: var(--secondary-color);   /* Altere para a cor ou imagem desejada */
 }
 
-.logos::before {
-  content: "";
-  position: absolute;
-  top: 60%; /* Inicia o fundo a partir do meio da seção logos */
-  left: 0;
-  right: 0;
-  bottom: -110%; /* Alonga o fundo para cobrir toda a seção description */
-  background-color: #007bff; /* Escolha a cor ou imagem desejada para o fundo */
-  z-index: -1; /* Coloca o fundo atrás do conteúdo da seção */
-}
-
 .description {
     display: flex;
     flex-direction: column;
@@ -39,6 +29,7 @@
     text-align: center;
     padding: 50px 12.5% 50px; /* 50px em cima, 20px nas laterais e 0px embaixo */
     gap: 25px;
+    background: var(--primary-color);
 }
 
 .description h1 {
@@ -49,6 +40,7 @@
 .description p {
     font-weight: 500; /* Aplica negrito ao texto do <p> */
     color: var(--secondary-color);
+    max-width: 1080px;
 }
 
 .description button {

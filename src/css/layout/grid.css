@@ -15,17 +15,25 @@
         "testimonials testimonials testimonials testimonials testimonials testimonials";
     grid-row-gap: 30px;
     justify-content: center;
-    grid-template-columns: repeat(6, 1fr); /* Define 6 colunas de tamanho igual */
+    grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6); /* Ajusta a largura das colunas considerando o padding */
+}
+
+header {
+    grid-area: header;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
 
 /* hero-section */
 
 .intro-text {
   grid-area: intro-text;
+  padding-left: calc(min(8.65vw, 1440px));
 }
 
 .intro-image {
-  grid-area: intro-image;
+    grid-area: intro-image;
+    padding-right: calc(min(8.65vw, 1440px));
 }
 
 /*  */
@@ -44,15 +52,22 @@
 
 .feature-item1 {
     grid-area: feature-item1;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
 
 .feature-item2 {
     grid-area: feature-item2;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
 
 .feature-item3 {
     grid-area: feature-item3;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
+
 
 /*  */
 
@@ -61,6 +76,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
 
 .stat1, .stat2, .stat3 {
@@ -71,18 +88,23 @@
 .stat1, .stat2, .stat3 {
   display: grid; /* Usando grid para o alinhamento centralizado */
   place-items: center; /* Centraliza o conteúdo em ambas as direções (horizontal e vertical) */
-  /* background: #DFECFC; */
 }
 
 #customers-title {
     grid-area: customers-title;
+    padding-left: 8.65vw;
+    padding-top: 100px;
 }
 
 #carousel__controls {
     grid-area: carousel-controls;
     justify-content: end;
+    padding-right: 8.65vw;
+    padding-top: 100px;
 }
 
 .testimonials {
     grid-area: testimonials;
+    padding-left: 8.65vw;
+    padding-right: 8.65vw;
 }
