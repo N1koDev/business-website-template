@@ -1,8 +1,6 @@
-/* Estilos Específicos */
-
 /* Display Styles */
 .display-large {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--display-large-size, 57px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -11,7 +9,7 @@
 }
 
 .display-medium {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--display-medium-size, 45px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -20,7 +18,7 @@
 }
 
 .display-small {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--display-small-size, 36px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -30,7 +28,7 @@
 
 /* Headline Styles */
 .headline-large {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--headline-large-size, 32px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -39,7 +37,7 @@
 }
 
 .headline-medium {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--headline-medium-size, 28px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -48,7 +46,7 @@
 }
 
 .headline-small {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--headline-small-size, 24px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -58,7 +56,7 @@
 
 /* Title Styles */
 .title-large {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--title-large-size, 22px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -67,7 +65,7 @@
 }
 
 .title-medium {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--title-medium-size, 16px);
     font-weight: var(--font-weight-medium);
     font-style: normal;
@@ -76,7 +74,7 @@
 }
 
 .title-small {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--title-small-size, 14px);
     font-weight: var(--font-weight-medium);
     font-style: normal;
@@ -86,7 +84,7 @@
 
 /* Label Styles */
 .label-large {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--label-large-size, 14px);
     font-weight: var(--font-weight-medium);
     font-style: normal;
@@ -95,7 +93,7 @@
 }
 
 .label-medium {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--label-medium-size, 12px);
     font-weight: var(--font-weight-medium);
     font-style: normal;
@@ -104,7 +102,7 @@
 }
 
 .label-small {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--label-small-size, 11px);
     font-weight: var(--font-weight-medium);
     font-style: normal;
@@ -114,7 +112,7 @@
 
 /* Body Styles */
 .body-large {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--body-large-size, 16px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -123,7 +121,7 @@
 }
 
 .body-medium {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--body-medium-size, 14px);
     font-weight: var(--font-weight-regular);
     font-style: normal;
@@ -132,7 +130,7 @@
 }
 
 .body-small {
-    font-family: var(--font-primary, Roboto);
+    font-family: var(--font-primary);
     font-size: var(--body-small-size, 12px);
     font-weight: var(--font-weight-regular);
     font-style: normal;

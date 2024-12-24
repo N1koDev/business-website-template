@@ -10,6 +10,11 @@
     padding-top: 140px;
 }
 
+.intro-text nav {
+    display: flex;
+    gap: 20px;
+}
+
 #intro-highlight {
     color: var(--primary-color);
     font-weight: var(--font-weight-semibold);
