@@ -1,0 +1,50 @@
+.button__container .button__icon:hover,
+.button--outlined .button__icon:hover,
+.button--text .button__icon:hover {
+    background: var(--terciary-color-opacity-08);
+    border-radius: 50%; /* Forma circular */
+}
+
+.button__container .button__icon:focus,
+.button__container .button__icon:active {
+    background: var(--terciary-color-opacity-12);
+    border-radius: 50%;
+}
+
+.button__container .button__icon:focus-visible {
+    border-color: var(--primary-color); /* Borda azul para foco */
+    outline: none; /* Sem outline */
+}
+
+/* Geral para botões */
+.button__container:hover {
+    background: var(--primary-color-opacity-08);
+}
+
+.button__container:focus,
+.button__container:active {
+    background: var(--primary-color-opacity-12);
+    outline: none; /* Sem outline */
+}
+
+/* Botões com modificadores 'outlined' e 'text' */
+.button--outlined .button__container:hover,
+.button--text .button__container:hover {
+    background: var(--terciary-color-opacity-08);
+}
+
+.button--outlined .button__container:focus,
+.button--outlined .button__container:active { 
+    border: 1px solid var(--primary-color); /* Borda azul no foco */
+}
+
+.button--text .button__container:focus,
+.button--text .button__container:active {
+    background: var(--terciary-color-opacity-12);
+}
+
+.button--outlined .button__container:focus-visible,
+.button--icon .button__container:focus-visible {
+    border: 1px solid var(--primary-color); /* Borda azul no foco */
+    outline: none; /* Sem outline */
+}

@@ -1,0 +1,33 @@
+/* Base Button Styles */
+.button {
+    display: inline-flex;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 auto;
+    align-self: stretch;
+    padding: 0.625rem 1.5rem;
+    border-radius: 6.25rem;
+}
+
+.button__label {
+    font-family: var(--font-primary);
+    font-size: var(--label-large-size, 0.875rem);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--label-large-line-height, 1.25rem);
+    letter-spacing: var(--label-large-letter-spacing, 0.00625rem);
+    text-align: center;
+}

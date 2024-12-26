@@ -11,4 +11,9 @@
 @import url('/features/features/features.css');
 @import url('/features/stats/stats.css');
 @import url('/features/testimonials/testimonials.css');
-@import url('/components/buttons/buttons.css');
+
+/* Buttons presets */
+@import url('/components/buttons/button-base.css');
+@import url('/components/buttons/button-types.css');
+@import url('/components/buttons/icon-buttons.css');
+@import url('/components/buttons/button-interactions.css');
