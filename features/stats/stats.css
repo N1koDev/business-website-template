@@ -1,0 +1,30 @@
+.stats-section {
+    display: flex;
+    margin-top: 4.375rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background-color: #DFECFC;
+}
+
+.stat1, .stat2, .stat3 {
+    display: flex;
+    padding: 5.25rem 2.8125rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+}
+
+.stat1 .display-large, 
+.stat2 .display-large, 
+.stat3 .display-large {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+}
+
+.stat1 .headline-medium, 
+.stat2 .headline-medium, 
+.stat3 .headline-medium {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+}

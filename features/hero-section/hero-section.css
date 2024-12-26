@@ -1,0 +1,34 @@
+/* layout/hero-section.css */
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem; /* Responsivo conforme ajustes */
+    padding-right: 31.5px;
+    padding-top: 140px;
+}
+
+.intro-text nav {
+    display: flex;
+    gap: 20px;
+}
+
+#intro-highlight {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.intro-image {
+    justify-self: end; /* Alinha à direita da célula horizontalmente */
+    padding-top: 140px;
+    height: auto;
+    max-width: 60vh;
+}
+
+#planning-img {
+    width: 100%; /* Define o tamanho máximo da imagem */
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra todo o container, mantendo a proporção */
+}

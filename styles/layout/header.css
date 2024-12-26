@@ -1,0 +1,12 @@
+/* layout/header.css */
+
+header {
+  display: flex; 
+  justify-content: space-between;
+  padding-top: 65px;
+}
+
+.button_container {
+    color: white;
+}
+
