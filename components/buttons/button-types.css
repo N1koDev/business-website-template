@@ -8,24 +8,10 @@
     color: var(--secondary-color);
 }
 
-.button--primary:hover {
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-}
-
 /* Outlined Button */
 .button--outlined {
     background: var(--secondary-color);
     border: 1px solid var(--schemes-outline, #79747E);
-}
-
-.button--outlined:focus {
-    border: 1px solid var(--primary-color); /* Borda azul no foco */
-    outline: none; /* Sem outline */
-    transition: border 0.2s ease; /* Transição suave */
-}
-
-.button--outlined:active {
-    border: 1px solid var(--primary-color); /* Borda ativa */
 }
 
 .button--outlined .button__label {
@@ -40,9 +26,4 @@
 
 .button--text .button__label {
     color: var(--primary-color);
-}
-
-/* Geral para botões com ícone */
-.button--icon .button__container:hover {
-    background: var(--terciary-color);
 }

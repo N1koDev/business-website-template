@@ -3,10 +3,20 @@
 header {
   display: flex; 
   justify-content: space-between;
+  align-items: center;
   padding-top: 65px;
+  height: 45px;
 }
 
-.button_container {
-    color: white;
+.header__logo {
+  flex: 1; /* Garante que o logo ocupe o espaço necessário */
+  height: 100%;
 }
 
+.header__nav {
+    display: flex; 
+    align-items: center;
+    gap: 1rem; /* Adiciona espaçamento entre os botões */
+    height: 100%;
+    weight: auto;
+}

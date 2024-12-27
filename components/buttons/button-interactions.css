@@ -1,41 +1,65 @@
-.button__container .button__icon:hover,
-.button--outlined .button__icon:hover,
-.button--text .button__icon:hover {
-    background: var(--terciary-color-opacity-08);
-    border-radius: 50%; /* Forma circular */
+/* Primary Button */
+.button--primary {
+    transition: box-shadow 0.2s ease;
 }
 
-.button__container .button__icon:focus,
-.button__container .button__icon:active {
-    background: var(--terciary-color-opacity-12);
-    border-radius: 50%;
+.button--primary:hover,
+.button--primary:focus {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    outline: none;
 }
 
-.button__container .button__icon:focus-visible {
-    border-color: var(--primary-color); /* Borda azul para foco */
-    outline: none; /* Sem outline */
+.button--primary .button__container {
+    transition: background 0.2s ease;
 }
 
-/* Geral para botões */
-.button__container:hover {
+.button--primary .button__container:hover {
+    background: var(--second-color-opacity-08);
+}
+
+.button--primary .button__container:focus,
+.button--primary .button__container:active {
+    background: var(--second-color-opacity-12);
+}
+
+/* Outlined Button */
+.button--outlined {
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+.button--outlined:active,
+.button--outlined:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+.button--outlined .button__container:hover {
     background: var(--primary-color-opacity-08);
 }
 
-.button__container:focus,
-.button__container:active {
-    background: var(--primary-color-opacity-12);
-    outline: none; /* Sem outline */
-}
-
-/* Botões com modificadores 'outlined' e 'text' */
-.button--outlined .button__container:hover,
-.button--text .button__container:hover {
-    background: var(--terciary-color-opacity-08);
-}
-
 .button--outlined .button__container:focus,
-.button--outlined .button__container:active { 
-    border: 1px solid var(--primary-color); /* Borda azul no foco */
+.button--outlined .button__container:active {
+    background: var(--primary-color-opacity-12);
+    border: var(--primary-color);
+}
+
+/* Text Button */
+.button--text {
+    transition: box-shadow 0.2s ease;
+}
+
+.button--text:hover,
+.button--text:focus {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.button--text .button__container {
+    transition: background 0.2s ease;
+}
+
+.button--text .button__container:hover {
+    background: var(--primary-color-opacity-08);
 }
 
 .button--text .button__container:focus,
@@ -43,8 +67,30 @@
     background: var(--terciary-color-opacity-12);
 }
 
-.button--outlined .button__container:focus-visible,
-.button--icon .button__container:focus-visible {
-    border: 1px solid var(--primary-color); /* Borda azul no foco */
-    outline: none; /* Sem outline */
+/* Button Icon Interactions */
+.button--icon:focus {
+    outline: none;
+    border-radius: 50%;
+}
+
+.button__container .button__icon {
+    transition: background 0.2s ease, border-radius 0.2s ease;
+}
+
+.button__container .button__icon:hover {
+    background: var(--terciary-color-opacity-08);
+    border-radius: 50%;
+}
+
+.button__container .button__icon:focus,
+.button__container .button__icon:active {
+    background: var(--terciary-color-opacity-12);
+    border-radius: 50%;
+    outline: none;
+}
+
+.button--icon .button__container:focus {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    outline: none;
 }

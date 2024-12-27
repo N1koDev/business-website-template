@@ -6,8 +6,12 @@
     --terciary-color: #DFECFC;
     
     /* Primary color with opacity */
-    --primary-color-opacity-08: rgba(255, 255, 255, 0.08); /* Consistent base for transparency */
-    --primary-color-opacity-12: rgba(255, 255, 255, 0.12); /* Consistent base for transparency */
+    --primary-color-opacity-08: rgba(31,129,218, 0.08); /* Consistent base for transparency */
+    --primary-color-opacity-12: rgba(31,129,218, 0.12); /* Consistent base for transparency */
+    
+    /* Second color with opacity */
+    --second-color-opacity-08: rgba(255,255,255, 0.08); /* Consistent base for transparency */
+    --second-color-opacity-12: rgba(255,255,255, 0.12); /* Consistent base for transparency */
     
     /* Terciary color with opacity */
     --terciary-color-opacity-08: rgba(31, 129, 218, 0.08);
