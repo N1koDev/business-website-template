@@ -1,0 +1,54 @@
+/* Primary Button */
+.button--primary {
+    background: var(--primary-color);
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.button--primary .button__label {
+    color: var(--secondary-color);
+}
+
+/* Outlined Button */
+.button--outlined {
+    background: transparent;
+    border: 1px solid var(--schemes-outline, #79747E);
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.button--outlined .button__label {
+    color: var(--primary-color);
+}
+
+/* Text Button */
+.button--text {
+    background: var(--secondary-color);
+    border: none;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.button--text .button__label {
+    color: var(--primary-color);
+}
+
+/* Estados Desabilitados */
+.button--primary:disabled {
+    background: var(--disabled-background, #E0E0E0);
+    box-shadow: none;
+}
+
+.button--primary:disabled .button__label {
+    color: var(--disabled-text-color, #A0A0A0);
+}
+
+.button--outlined:disabled {
+    border-color: var(--disabled-border-color, #D6D6D6);
+}
+
+.button--outlined:disabled .button__label {
+    color: var(--disabled-text-color, #A0A0A0);
+}
+
+.button--text:disabled .button__label {
+    color: var(--disabled-text-color, #A0A0A0);
+}

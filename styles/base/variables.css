@@ -74,5 +74,10 @@
     
     --body-small-line-height: calc(var(--body-small-size) * var(--line-height-small));
     --body-medium-line-height: calc(var(--body-medium-size) * var(--line-height-medium));
-
+    
+    /* Buttons variables */
+    --button-transition: 0.2s ease;
+    --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --button-radius: 6.25rem;
+    --button-shadow-focus: 0px 1px 2px 0px rgba(0, 0, 0, 0.40), 0px 1px 3px 1px rgba(0, 0, 0, 0.20);
 }

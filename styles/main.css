@@ -13,7 +13,7 @@
 @import url('/features/testimonials/testimonials.css');
 
 /* Buttons presets */
-@import url('/components/buttons/button-base.css');
-@import url('/components/buttons/button-types.css');
-@import url('/components/buttons/icon-buttons.css');
-@import url('/components/buttons/button-interactions.css');
+@import url('/components/buttons/_base.css');
+@import url('/components/buttons/_icon.css');
+@import url('/components/buttons/_types.css');
+@import url('/components/buttons/_interactions.css');
