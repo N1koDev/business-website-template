@@ -8,6 +8,11 @@
     gap: 2rem; /* Responsivo conforme ajustes */
     padding-right: 31.5px;
     padding-top: 140px;
+    justify-self: start;
+}
+
+.intro-text .display-large {
+    font-weight: var(--font-weight-bold);
 }
 
 .intro-text nav {
@@ -17,14 +22,14 @@
 
 #intro-highlight {
     color: var(--primary-color);
-    font-weight: var(--font-weight-semibold);
 }
 
 .intro-image {
-    justify-self: end; /* Alinha à direita da célula horizontalmente */
+    display: flex;
+    justify-content: end;
+    text-aling: right;
     padding-top: 140px;
-    height: auto;
-    max-width: 60vh;
+    padding-left: 31.5px;
 }
 
 #planning-img {

@@ -6,6 +6,8 @@ header {
   align-items: center;
   padding-top: 65px;
   height: 45px;
+  padding-left: 8.65vw;
+  padding-right: 8.65vw;
 }
 
 .header__logo {

@@ -40,7 +40,17 @@ footer {
 }
 
 .email-settings .title-medium { 
+    text-align: center;
     text-decoration: underline;
+    max-width: 640px;
+    min-width: 440px;
+}
+
+.email-settings .label-large { 
+    text-align: center;
+    text-decoration: underline;
+    max-width: 640px;
+    min-width: 440px;
 }
 
 .copyright, .footer-logo {
