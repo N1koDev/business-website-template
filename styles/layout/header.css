@@ -1,24 +1,22 @@
 /* layout/header.css */
 
 header {
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 65px;
-  height: 45px;
-  padding-left: 8.65vw;
-  padding-right: 8.65vw;
+    display: flex;
+    padding: 0rem 21.075rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
 
 .header__logo {
-  flex: 1; /* Garante que o logo ocupe o espaço necessário */
-  height: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
 }
 
 .header__nav {
-    display: flex; 
+    display: flex;
     align-items: center;
-    gap: 1rem; /* Adiciona espaçamento entre os botões */
-    height: 100%;
-    weight: auto;
+    gap: 0.625rem;
+    align-self: stretch;
 }

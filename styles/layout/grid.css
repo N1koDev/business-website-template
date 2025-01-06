@@ -4,8 +4,7 @@
     display: grid;
     grid-template-areas: 
         "intro intro intro intro intro intro"
-        "logos logos logos logos logos logos"
-        "description description description description description description"
+        "logos-description logos-description logos-description logos-description logos-description logos-description"
         "features features features features features features"
         "stats stats stats stats stats stats"
         "testimonials testimonials testimonials testimonials testimonials testimonials";

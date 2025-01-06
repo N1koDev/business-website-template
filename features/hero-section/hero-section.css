@@ -1,39 +1,37 @@
 /* layout/hero-section.css */
 
-.intro-text {
+.page__intro {
+    display: flex;
+    padding: 0rem 21.075rem;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+
+.intro__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    gap: 2rem; /* Responsivo conforme ajustes */
-    padding-right: 31.5px;
-    padding-top: 140px;
-    justify-self: start;
+    gap: 2.1875rem;
+    flex: 1 0 0;
 }
 
-.intro-text .display-large {
-    font-weight: var(--font-weight-bold);
+.intro__title, intro__description {
+    align-self: stretch;
 }
 
-.intro-text nav {
+.intro__nav {
     display: flex;
-    gap: 20px;
+    height: 2.5rem;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
 }
 
-#intro-highlight {
-    color: var(--primary-color);
-}
-
-.intro-image {
+.intro__image {
     display: flex;
-    justify-content: end;
-    text-aling: right;
-    padding-top: 140px;
-    padding-left: 31.5px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
 }
 
-#planning-img {
-    width: 100%; /* Define o tamanho máximo da imagem */
-    height: 100%;
-    object-fit: cover; /* Faz com que a imagem cubra todo o container, mantendo a proporção */
-}

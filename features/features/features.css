@@ -1,62 +1,33 @@
-.feature-item {
+.page__features {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-    max-height: 460px; /* Limite máximo de altura da seção */
-}
-
-/* Alternar ordem entre imagem e texto */
-.feature-item:nth-child(odd) {
-    flex-direction: row; /* Imagem à esquerda, texto à direita */
-}
-
-.feature-item:nth-child(even) {
-    flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
-}
-
-.feature-text {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;  /* Garante que os itens não se estiquem */
-    gap: 3.125rem;
-}
-
-.feature-text .button {
-    width: auto;  /* Impede que o botão ocupe toda a largura */
-}
-
-.text-content {
-    display: flex;
+    max-height: 106.25rem;
+    padding: 2.5rem 21.075rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.875rem;
+    gap: 5rem;
     align-self: stretch;
 }
 
-.text-content .display-large {
-    font-weight: var(--font-weight-semibold); /* Aplica o bold somente nesta seção */
+.features__item {
+    display: flex;
+    max-width: 77.85rem;
+    align-items: center;
+    gap: 3.125rem;
+    align-self: stretch;
 }
 
-.feature-image {
-    height: 460px; /* Isso faz a imagem ocupar a altura disponível */
+.features__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+    flex: 1 0 0;
 }
 
-.feature-item:nth-child(odd) .feature-image {
-    justify-content: right; /* Alinha a imagem à esquerda em itens ímpares */
-}
-
-.feature-item:nth-child(even) .feature-image {
-    justify-content: left; /* Alinha a imagem à direita em itens pares */
-}
-
-.feature-image img {
-    object-fit: contain; /* Mantém a proporção da imagem sem cortar */
-    height: 100%; /* Limita a altura máxima */
-}
-
-.feature-highlight {
-    color: var(--primary-color);
+.features__image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
 }

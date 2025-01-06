@@ -1,54 +1,46 @@
 /* layout/business-logos.css */
 
-.logos {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
-  height: 100%;            /* Garante que a div pai tenha altura suficiente (ou defina uma altura fixa) */
-  position: relative;
-  padding-top: 50px;
-  background: linear-gradient(to bottom, transparent 60%, var(--primary-color) 0%);
+.client-logos-section {
+    /* Layout */
+    display: flex;
+    padding: 3.125rem 21.075rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+    align-self: stretch;
+    
+    /* Style */
+    background: linear-gradient(180deg, #FFF 25%, #4F378A 25%);
 }
 
-.logos > div {
-  display: flex;
-  padding: 55px 94px;
-  width: auto;             /* Ajusta a largura automaticamente */
-  height: auto;            /* Ajusta a altura automaticamente */
-  align-items: center;     /* Alinha os itens verticalmente dentro da div */
-  gap: 40px;               /* Garante um espaço de 40px entre os logos */
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background-color: var(--secondary-color);   /* Altere para a cor ou imagem desejada */
+.client-logos {
+    /* Layout */
+    display: flex;
+    padding: 3.125rem 6.25rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    
+    /* Style */
+    border-radius: 0.9375rem;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.description {
+.client-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5625rem;
+    align-self: stretch;
+}
+
+.client-info__title, .client-info__description {
+    display: flex;
+    height: 3.0625rem;
+    flex-direction: column;
     text-align: center;
-    padding: 50px 12.5% 50px; /* 50px em cima, 20px nas laterais e 0px embaixo */
-    gap: 25px;
-    background: var(--primary-color);
+    align-self: stretch;
 }
 
-.description h1 {
-    font-weight: bold; /* Aplica negrito ao texto do <h1> */
-    color: var(--secondary-color);
-}
-
-.description p {
-    font-weight: 500; /* Aplica negrito ao texto do <p> */
-    color: var(--secondary-color);
-    max-width: 1080px;
-}
-
-.description .button__label {
-    font-size: 1.5625rem;
-    border: 0;
-}
-
-.description .button {
-    border: 0;
-}
 
