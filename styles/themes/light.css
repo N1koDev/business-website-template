@@ -1,0 +1,76 @@
+:root {
+    /* Light Theme */
+    
+    /** Primary **/
+    --Schemes-Primary: var(--color-P40);
+    --Schemes-On-Primary: var(--color-P100);
+    --Schemes-Primary-Container: var(--color-P90);
+    --Schemes-On-Primary-Container: var(--color-P30);
+    
+    /** Secondary **/
+    --Schemes-Secondary: var(--color-S40);
+    --Schemes-On-Secondary: var(--color-S100);
+    --Schemes-Secondary-Container: var(--color-S90);
+    --Schemes-On-Secondary-Container: var(--color-S30);
+    
+    /** Terciary **/
+    --Schemes-Tertiary: var(--color-T40);
+    --Schemes-On-Tertiary: var(--color-T100);
+    --Schemes-Tertiary-Container: var(--color-T90);
+    --Schemes-On-Tertiary-Container: var(--color-T30);
+    
+    /** Error **/
+    --Schemes-Error: var(--color-E40);
+    --Schemes-On-Error: var(--color-E100);
+    --Schemes-Error-Container: var(--color-E90);
+    --Schemes-On-Error-Container: var(--color-E30); 
+    
+    /** Fixed colors **/
+    /*** swatch group ***/
+    --Schemes-Primary-Fixed: var(--color-P90);
+    --Schemes-Primary-Fixed-Dim: var(--color-P80);
+    --Schemes-On-Primary-Fixed: var(--color-P10);
+    --Schemes-On-Primary-Fixed-Variant: var(--color-S30);
+    
+    /*** swatch group ***/
+    --Schemes-Secondary-Fixed: var(--color-S90);
+    --Schemes-Secondary-Fixed-Dim: var(--color-S80);
+    --Schemes-On-Secondary-Fixed: var(--color-S10);
+    --Schemes-On-Secondary-Fixed-Variant: var(--color-S30);
+    
+    /*** swatch group ***/
+    --Schemes-Primary-Fixed: var(--color-T90);
+    --Schemes-Primary-Fixed-Dim: var(--color-T80);
+    --Schemes-On-Primary-Fixed: var(--color-T10);
+    --Schemes-On-Primary-Fixed-Variant: var(--color-T30);
+    
+    /** Surfaces **/
+    
+    /*** Surface group ***/
+    background: var(--Schemes-Surface-Dim, #DED8E1);
+    background: var(--Schemes-Surface, #FEF7FF);
+    background: var(--Schemes-Surface-Bright, #FEF7FF);
+    
+    /*** Surfaces ***/
+    background: var(--Schemes-Surface-Container-Lowest, #FFF);
+    background: var(--Schemes-Surface-Container-Low, #F7F2FA);
+    background: var(--Schemes-Surface-Container, #F3EDF7);
+    background: var(--Schemes-Surface-Container-High, #ECE6F0);
+    background: var(--Schemes-Surface-Container-Highest, #E6E0E9);
+    
+    /*** On Surfaces ***/
+    background: var(--Schemes-On-Surface, #1D1B20);
+    background: var(--Schemes-On-Surface-Variant, #49454F);
+    background: var(--Schemes-Outline, #79747E);
+    background: var(--Schemes-Outline-Variant, #CAC4D0);
+    
+    /*** Other ***/
+    /**** Inverses ****/
+    background: var(--Schemes-Inverse-Surface, #322F35);
+    background: var(--Schemes-Inverse-On-Surface, #F5EFF7);
+    
+    background: var(--Schemes-Inverse-Primary, #D0BCFF);
+    
+    background: var(--Schemes-Scrim, #000);
+    background: var(--Schemes-Shadow, #000);
+}

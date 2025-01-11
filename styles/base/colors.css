@@ -1,0 +1,76 @@
+:root {
+    /* Tonal Palettes */
+    /** Primary Color **/
+
+    --color-P0: #000000;
+    --color-P10: #22005D;
+    --color-P20: #381E72;
+    --color-P30: #4F378A;
+    --color-P40: #644E9F;
+    --color-P50: #8069BF;
+    --color-P60: #9A83DB;
+    --color-P70: #B69DF7;
+    --color-P80: #CFBCFF;
+    --color-P90: #E9DDFF;
+    --color-P95: #F6EEFF;
+    --color-P99: #FFFBFF;
+    --color-P100: #FFFFFF; 
+
+    /* Secondary Color */
+    --color-S0: #000000;
+    --color-S10: #1E192B;
+    --color-S20: #332D41;
+    --color-S30: #4A4459;
+    --color-S40: #625B71;
+    --color-S50: #7B738B;
+    --color-S60: #958DA5;
+    --color-S70: #B0A7C0;
+    --color-S80: #CCC2DC;
+    --color-S90: #E8DEF9;
+    --color-S95: #F6EEFF;
+    --color-S99: #FFFBFF;
+    --color-S100: #FFFFFF;
+
+    /* Tertiary Color */
+    --color-T10: #31101D;
+    --color-T20: #4A2532;
+    --color-T30: #633B48;
+    --color-T40: #7E5260;
+    --color-T50: #996A78;
+    --color-T60: #B58392;
+    --color-T70: #D29DAC;
+    --color-T80: #EFB8C8;
+    --color-T90: #FFD9E3;
+    --color-T95: #FFECF0;
+    --color-T99: #FFFBFF;
+    --color-T100: #FFFFFF;
+    
+    /* Error Color */
+    --color-E10: #410004;
+    --color-E20: #65090E;
+    --color-E30: #852221;
+    --color-E40: #A53A36;
+    --color-E50: #C5524C;
+    --color-E60: #E66A63;
+    --color-E70: #FF8981;
+    --color-E80: #FFB3AD;
+    --color-E90: #FFDAD7;
+    --color-E95: #FFEDEB;
+    --color-E99: #FFFBFF;
+    --color-E100: #FFFFFF;
+    
+    /*Neutral Color */
+    --color-N10: #1C1B1C;
+    --color-N20: #313030;
+    --color-N30: #484646;
+    --color-N40: #605E5E;
+    --color-N50: #797676;
+    --color-N60: #939090;
+    --color-N70: #ADAAAA;
+    --color-N80: #C9C6C5;
+    --color-N90: #E5E1E1;
+    --color-N95: #F4F0EF;
+    --color-N99: #FFFBFF;
+    --color-N100: #FFFFFF;
+
+}
