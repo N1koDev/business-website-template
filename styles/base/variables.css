@@ -1,21 +1,6 @@
 /* base/variables.css */
 :root {
 
-    /* Primary color with opacity */
-    --primary-color-opacity-08: rgba(31, 129, 218, 0.08); /* Consistent base for transparency */
-    --primary-color-opacity-12: rgba(31, 129, 218, 0.12); /* Consistent base for transparency */
-
-    /* Secondary color with opacity */
-    --secondary-color-opacity-08: rgba(98, 91, 113, 0.08); /* Consistent base for transparency */
-    --secondary-color-opacity-12: rgba(98, 91, 113, 0.12); /* Consistent base for transparency */
-
-    /* Tertiary color with opacity */
-    --tertiary-color-opacity-08: rgba(125, 82, 96, 0.08);
-    --tertiary-color-opacity-12: rgba(125, 82, 96, 0.12);
-
-    /* Text colors */
-    --text-on-surface: #1D1B20; /* For text on white or light surfaces */
-
     /* Fonts and Weights */
     --font-primary: "Roboto", "Helvetica Neue", Arial, sans-serif;
     --font-weight-thin: 100;

@@ -10,7 +10,8 @@
     align-self: stretch;
     
     /* Style */
-    background: linear-gradient(180deg, #FFF 25%, #4F378A 25%);
+    background: linear-gradient(180deg, #FFF 25%, var(--Schemes-On-Primary-Container) 25%);
+    
 }
 
 .client-logos {

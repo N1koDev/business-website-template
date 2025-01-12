@@ -1,34 +1,34 @@
 /* Primary Button */
 .button--primary {
-    background: var(--primary-color);
+    background: var(--Schemes-Primary);
     border: none;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .button--primary .button__label {
-    color: var(--secondary-color);
+    color: var(--Schemes-On-Primary);
 }
 
 /* Outlined Button */
 .button--outlined {
     background: transparent;
-    border: 1px solid var(--schemes-outline, #79747E);
+    border: 1px solid var(--Schemes-Outline, #79747E);
     transition: border-color 0.3s ease, background 0.3s ease;
 }
 
 .button--outlined .button__label {
-    color: var(--primary-color);
+    color: var(--Schemes-Primary);
 }
 
 /* Text Button */
 .button--text {
-    background: var(--secondary-color);
+    background: var(--Schemes-On-Primary);
     border: none;
     transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .button--text .button__label {
-    color: var(--primary-color);
+    color: var(--Schemes-Primary);
 }
 
 /* Estados Desabilitados */

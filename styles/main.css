@@ -1,23 +1,36 @@
-/* main.css */
+/* Importando arquivos de variáveis e reset */
 @import url('base/normalize.css');
-@import url('base/variables.css');
+@import url('base/colors.css');
 @import url('base/typography.css');
+@import url('base/variables.css');
 
-/* */
+/* Importando layouts principais */
 @import url('layout/grid.css');
 @import url('layout/header.css');
-@import url('layout/page.css');
 @import url('layout/footer.css');
+@import url('layout/page.css');
 
-/* */
-@import url('/features/hero-section/hero-section.css');
-@import url('/features/business-logos/business-logos.css');
-@import url('/features/features/features.css');
-@import url('/features/stats/stats.css');
-@import url('/features/testimonials/testimonials.css');
+/* Meterial Desing */
+@import url('themes/material-theme/light.css');
+@import url('themes/material-theme/light-hc.css');
+@import url('themes/material-theme/light-mc.css');
+@import url('themes/material-theme/dark.css');
+@import url('themes/material-theme/dark-hc.css');
+@import url('themes/material-theme/dark-mc.css');
+@import url('themes/material-theme/palettes.css');
+@import url('themes/material-theme/state-layers.css');
 
-/* Buttons presets */
+
+
+/* Importando componentes de botões */
 @import url('/components/buttons/_base.css');
 @import url('/components/buttons/_icon.css');
-@import url('/components/buttons/_types.css');
 @import url('/components/buttons/_interactions.css');
+@import url('/components/buttons/_types.css');
+
+/* Importando recursos das funcionalidades */
+@import url('/features/business-logos/business-logos.css');
+@import url('/features/features/features.css');
+@import url('/features/hero-section/hero-section.css');
+@import url('/features/stats/stats.css');
+@import url('/features/testimonials/testimonials.css');
