@@ -1,18 +1,18 @@
 /* Primary Button */
 .button--primary {
-    background: var(--Schemes-Primary);
+    background: var(--md-sys-color-primary);
     border: none;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .button--primary .button__label {
-    color: var(--Schemes-On-Primary);
+    color: var(--md-sys-color-on-primary);
 }
 
 /* Outlined Button */
 .button--outlined {
     background: transparent;
-    border: 1px solid var(--Schemes-Outline, #79747E);
+    border: 1px solid var(--md-sys-color-outline);
     transition: border-color 0.3s ease, background 0.3s ease;
 }
 
@@ -22,13 +22,13 @@
 
 /* Text Button */
 .button--text {
-    background: var(--Schemes-On-Primary);
+    background: var(--md-sys-color-on-primary);
     border: none;
     transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .button--text .button__label {
-    color: var(--Schemes-Primary);
+    color: var(--md-sys-color-primary);
 }
 
 /* Estados Desabilitados */

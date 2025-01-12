@@ -16,8 +16,17 @@
     flex: 1 0 0;
 }
 
-.intro__title, intro__description {
+.intro__title {
     align-self: stretch;
+    font-weight: var(--font-weight-medium);
+}
+
+.intro__description {
+    align-self: stretch;
+}
+
+.intro__highlight {
+    color: var(--md-sys-color-primary);
 }
 
 .intro__nav {

@@ -3,20 +3,21 @@
 .client-logos-section {
     /* Layout */
     display: flex;
-    padding: 3.125rem 21.075rem;
+    padding: 1.25rem 21.075rem 3.75rem 21.075rem;
     flex-direction: column;
     align-items: center;
     gap: 3.125rem;
     align-self: stretch;
     
     /* Style */
-    background: linear-gradient(180deg, #FFF 25%, var(--Schemes-On-Primary-Container) 25%);
+    background: linear-gradient(180deg, var(--md-sys-color-surface) 20%, var(--md-sys-color-surface-tint) 20%);
     
 }
 
 .client-logos {
     /* Layout */
     display: flex;
+    max-width: 64.33313rem;
     padding: 3.125rem 6.25rem;
     justify-content: center;
     align-items: flex-start;
@@ -24,24 +25,38 @@
     
     /* Style */
     border-radius: 0.9375rem;
-    background: #FFF;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: var(--md-sys-color-surface-bright);
+    
+    /* M3/Elevation Light/5 */
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
 .client-info {
     display: flex;
+    max-width: 77.85rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1.5625rem;
-    align-self: stretch;
 }
 
-.client-info__title, .client-info__description {
-    display: flex;
-    height: 3.0625rem;
-    flex-direction: column;
+.client-info__title {
+    width: 41.25rem;
     text-align: center;
+    
+    /* Typography */
+    font-weight: var(--font-weight-medium);
+    color: var(--md-sys-color-inverse-on-surface);
+
+}
+
+.client-info__description {
+    max-width: 77.85rem;
     align-self: stretch;
+    text-align: center;
+    
+    /* Typography */
+    color: var(--md-sys-color-inverse-on-surface);
 }
 
 

@@ -1,22 +1,35 @@
 .page__stats { 
+    /* Layout */
     display: flex;
     padding: 0rem 21.075rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-self: stretch;
     
-    background: var(--Schemes-Surface-Container, #F3EDF7);
+    /* Style */
+    background-color: var(--md-sys-color-secondary-container);
 }
 
 .stats__item {
     display: flex;
     height: 17rem;
-    padding: 3.75rem 2.8125rem;
+    max-width: 25.95rem;
+    padding: 3.75rem 2.8125rem 3.75rem 0rem;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
 }
 
 .stats__value {
-    
+    color: var(--md-sys-color-on-secondary-container);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+}
+
+.stats__label {
+    color: var(--md-sys-color-on-secondary-container);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
 }

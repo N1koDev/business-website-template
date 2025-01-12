@@ -20,8 +20,6 @@
 @import url('themes/material-theme/palettes.css');
 @import url('themes/material-theme/state-layers.css');
 
-
-
 /* Importando componentes de botões */
 @import url('/components/buttons/_base.css');
 @import url('/components/buttons/_icon.css');
