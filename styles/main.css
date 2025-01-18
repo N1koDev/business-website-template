@@ -1,6 +1,6 @@
 /* Importando arquivos de variáveis e reset */
 @import url('base/normalize.css');
-@import url('base/colors.css');
+@import url('base/material-desing.css');
 @import url('base/typography.css');
 @import url('base/variables.css');
 
@@ -29,6 +29,6 @@
 /* Importando recursos das funcionalidades */
 @import url('/features/business-logos/business-logos.css');
 @import url('/features/features/features.css');
-@import url('/features/hero-section/hero-section.css');
+@import url('/features/intro/intro.css');
 @import url('/features/stats/stats.css');
 @import url('/features/testimonials/testimonials.css');

@@ -1,9 +1,9 @@
 /* layout/business-logos.css */
 
-.client-logos-section {
+.page__clients {
     /* Layout */
     display: flex;
-    padding: 1.25rem 21.075rem 3.75rem 21.075rem;
+    padding: 1.25rem 8.78% 3.75rem 8.78%;
     flex-direction: column;
     align-items: center;
     gap: 3.125rem;
@@ -14,7 +14,7 @@
     
 }
 
-.client-logos {
+.page__clients-logos {
     /* Layout */
     display: flex;
     max-width: 64.33313rem;
@@ -31,7 +31,7 @@
     box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
-.client-info {
+.page__clients-info {
     display: flex;
     max-width: 77.85rem;
     flex-direction: column;
@@ -40,7 +40,7 @@
     gap: 1.5625rem;
 }
 
-.client-info__title {
+.page__clients-title {
     width: 41.25rem;
     text-align: center;
     
@@ -50,7 +50,7 @@
 
 }
 
-.client-info__description {
+.page__clients-description {
     max-width: 77.85rem;
     align-self: stretch;
     text-align: center;

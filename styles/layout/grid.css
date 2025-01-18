@@ -17,7 +17,6 @@
 
 .intro {
   grid-area: intro;
-  padding-left: calc(min(8.65vw, 1440px));
 }
 
 /*  */
@@ -36,23 +35,14 @@
 
 .features {
     grid-area: features;
-    padding-left: 8.65vw;
-    padding-right: 8.65vw;
 }
 
 /*  */
 
 .stats {
     grid-area: stats;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding-left: 8.65vw;
-    padding-right: 8.65vw;
 }
 
 .testimonials {
     grid-area: testimonials;
-    padding-left: 8.65vw;
-    padding-right: 8.65vw;
 }

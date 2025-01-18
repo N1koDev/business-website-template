@@ -2,7 +2,7 @@
 
 .page__intro {
     display: flex;
-    padding: 0rem 21.075rem;
+    padding: 0rem 8.78%;
     align-items: center;
     gap: 1.25rem;
     align-self: stretch;
@@ -21,12 +21,17 @@
     font-weight: var(--font-weight-medium);
 }
 
-.intro__description {
-    align-self: stretch;
+.intro__highlight {
+    color: var(--md-sys-color-primary);
 }
 
 .intro__highlight {
-    color: var(--md-sys-color-primary);
+  display: block; /* Faz o <span> ser exibido como um bloco, forçando a quebra de linha */
+}
+
+
+.intro__description {
+    align-self: stretch;
 }
 
 .intro__nav {
@@ -38,9 +43,10 @@
 }
 
 .intro__image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     flex: 1 0 0;
+    align-self: stretch;
+    
+    border-radius: 1.75rem;
+    background: url("/assets/images/illustrations/image-background.png") lightgray 50% / cover no-repeat;
 }
 
