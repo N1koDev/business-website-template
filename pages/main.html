@@ -13,6 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import '@material/web/all.js';
+      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
     
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
@@ -50,13 +65,16 @@
         </div>
         
         <nav class="header__nav">
-            <button class="header__button button button--outlined">
+            <!-- <button class="header__button button button--outlined">
                 <div class="button__container">
                     <span class="button__label">Visit us</span>
                 </div>
-            </button>
-    
-            <button class="header__button button button--outlined">
+            </button> -->
+            
+            <md-outlined-button>Visit us</md-outlined-button>
+            <md-filled-button>View on Browser</md-filled-button>
+            
+            <button class="header__button button button--primary">
                 <div class="button__container">
                     <span class="button__label">View on Browser</span>
                 </div>
@@ -91,7 +109,6 @@
             </div>
 
             <img class="intro__image" alt="">
-
         </section>
 
         <section class="page__clients">
@@ -184,7 +201,6 @@
             </div>
         </section>
 
-        <!-- Seção de recursos -->
         <section class="page__features features">
             <article class="features__item">
                 <div class="features__text">
@@ -242,7 +258,6 @@
             </article>
         </section>
 
-        <!-- Seção de estatísticas -->
         <section class="page__stats stats">
             <div class="stats__item">
                 <h3 class="stats__value display-large">100%</h3>
@@ -258,7 +273,6 @@
             </div>
         </section>
 
-        <!-- Seção de depoimentos -->
         <section class="page__testimonials testimonials">
             
             <div class="testimonials__header">
@@ -321,7 +335,6 @@
                     </div>
                 </article>
             </div>
-            
         </section>
     </main>
 

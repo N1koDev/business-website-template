@@ -1,7 +1,7 @@
 .light {
   --md-sys-color-primary: rgb(0 80 150);
   --md-sys-color-surface-tint: rgb(0 95 175);
-  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-on-primary: rgb(255, 255, 255);
   --md-sys-color-primary-container: rgb(0 117 214);
   --md-sys-color-on-primary-container: rgb(255 255 255);
   --md-sys-color-secondary: rgb(65 95 138);
@@ -48,4 +48,7 @@
   --md-sys-color-surface-container: rgb(235 238 247);
   --md-sys-color-surface-container-high: rgb(229 232 241);
   --md-sys-color-surface-container-highest: rgb(224 226 236);
+  
+  --md-state-layers-on-primary-opacity-008: rgba(255, 255, 255, 0.08);
+  --md-state-layers-on-primary-opacity-012: rgba(255, 255, 255, 0.12);
 }

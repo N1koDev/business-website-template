@@ -14,7 +14,7 @@
 
 .button--icon .button__container {
     border-radius: 50%; /* Forma circular */
-    background: var(--terciary-color);
+    background: var(--md-sys-color-tertiary);
     padding: 0;
     transition: background 0.3s ease, transform 0.2s ease;
     cursor: pointer;
@@ -33,18 +33,4 @@
     height: var(--icon-size, 1.5rem);
     color: var(--primary-color);
     transition: color 0.3s ease;
-}
-
-/* Estados Desabilitados */
-.button--icon:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--icon:disabled .button__container {
-    background: var(--disabled-background, #E0E0E0);
-}
-
-.button--icon:disabled .material-symbols-outlined {
-    color: var(--disabled-icon-color, #A0A0A0);
 }

@@ -21,10 +21,9 @@
 @import url('themes/material-theme/state-layers.css');
 
 /* Importando componentes de botões */
-@import url('/components/buttons/_base.css');
-@import url('/components/buttons/_icon.css');
-@import url('/components/buttons/_interactions.css');
-@import url('/components/buttons/_types.css');
+@import url('/components/buttons/base/base.styles.css');
+@import url('/components/buttons/primary/primary.styles.css');
+
 
 /* Importando recursos das funcionalidades */
 @import url('/features/business-logos/business-logos.css');

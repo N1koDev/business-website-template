@@ -1,0 +1,36 @@
+.button--primary {
+    background: var(--md-sys-color-primary);
+}
+
+/* While hovering */
+.button--primary:hover {
+    border-radius: 6.25rem;
+    background: var(--md-sys-color-primary);
+    
+    /* M3/Elevation Light/1 */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    
+    /* Change to: "Filled, hovered, Show Icon=False" */
+    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+    animation-duration: 200ms;
+}
+
+/* While pressing */
+.button--primary:active {
+    /* Change to: "Filled, pressed, Show Icon=False" */
+    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+    animation-duration: 200ms;
+}
+
+.button--primary .button__container:hover {
+    background: var(--md-state-layers-on-primary-opacity-008);
+}
+
+.button--primary .button__container:focus,
+.button--primary .button__container:active {
+    background: var(--md-state-layers-on-primary-opacity-012);
+}
+
+.button--primary .button__label {
+    color: var(--md-sys-color-on-primary);
+}
