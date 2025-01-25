@@ -1,6 +1,6 @@
 /* Importando arquivos de variáveis e reset */
 @import url('base/normalize.css');
-@import url('base/material-desing.css');
+@import url('base/material-design.css');
 @import url('base/typography.css');
 @import url('base/variables.css');
 
@@ -23,6 +23,7 @@
 /* Importando componentes de botões */
 @import url('/components/buttons/base/base.styles.css');
 @import url('/components/buttons/primary/primary.styles.css');
+@import url('/components/buttons/outlined/outlined.styles.css');
 
 
 /* Importando recursos das funcionalidades */

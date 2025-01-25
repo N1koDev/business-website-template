@@ -48,6 +48,10 @@
   --md-sys-color-surface-container: rgb(235 238 247);
   --md-sys-color-surface-container-high: rgb(229 232 241);
   --md-sys-color-surface-container-highest: rgb(224 226 236);
+
+  --md-state-layers-primary-opacity-008: rgba(0, 80, 150, 0.08);
+  --md-state-layers-primary-opacity-012: rgba(0, 80, 150, 0.12);
+  --md-state-layers-primary-opacity-016: rgba(0, 80, 150, 0.16);
   
   --md-state-layers-on-primary-opacity-008: rgba(255, 255, 255, 0.08);
   --md-state-layers-on-primary-opacity-012: rgba(255, 255, 255, 0.12);
