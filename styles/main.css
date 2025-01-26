@@ -24,6 +24,7 @@
 @import url('/components/buttons/base/base.styles.css');
 @import url('/components/buttons/primary/primary.styles.css');
 @import url('/components/buttons/outlined/outlined.styles.css');
+@import url('/components/buttons/text/text.styles.css');
 
 
 /* Importando recursos das funcionalidades */

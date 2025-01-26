@@ -1,11 +1,14 @@
 /* layout/hero-section.css */
 
 .page__intro {
-    display: flex;
-    padding: 0rem 8.78%;
-    align-items: center;
-    gap: 1.25rem;
-    align-self: stretch;
+    grid-column: 1 / -1; /* Garante que ocupe todo o grid */
+    max-width: 1142px;
+    width: 100%; /* Responsivo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex; /* Usa flex para alinhar texto e imagem */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    gap: 1rem; /* Espaço entre os itens */
 }
 
 .intro__text {
@@ -13,7 +16,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2.1875rem;
-    flex: 1 0 0;
+    flex: 1; /* Garante que o texto ocupe o espaço necessário */
+}
+
+.intro__image {
+    flex-shrink: 0; /* Impede que a imagem seja reduzida */
+    max-width: 50%; /* Limita o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
 }
 
 .intro__title {

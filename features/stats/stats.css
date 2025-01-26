@@ -1,26 +1,52 @@
-.page__stats { 
-    /* Layout */    
-    display: flex;
-    padding: 0rem 8.78%;
-    justify-content: space-around;
-    align-items: center;
-    align-self: stretch;
-    
-    /* Style */
+.page__stats {
+    grid-column: 1 / -1; /* Garante que ocupe toda a largura do grid */
+    width: 100%;
     background-color: var(--md-sys-color-secondary-container);
+}
+
+.page__stats__content {
+    max-width: 1142px; /* Limita a largura máxima */
+    width: 100%;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 2rem; /* Espaçamento entre os itens */
+    grid-template-areas: "stat1 stat2 stat3"; /* Definindo áreas específicas para cada item */
 }
 
 .stats__item {
     display: flex;
     height: 17rem;
     max-width: 25.95rem;
-    /* padding: 3.75rem 2.8125rem 3.75rem 0rem; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    flex: 1 0 0;
 }
+
+/* Atribuindo grid-area a cada item */
+.stats__item:nth-child(1) {
+    grid-area: stat1;
+}
+
+.stats__item:nth-child(2) {
+    grid-area: stat2;
+}
+
+.stats__item:nth-child(3) {
+    grid-area: stat3;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .stats__value {
     color: var(--md-sys-color-on-secondary-container);

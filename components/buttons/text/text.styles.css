@@ -1,0 +1,21 @@
+.button--text {
+    background: transparent;
+}
+
+.button--text .button__container {
+    background: transparent;
+}
+
+.button--text .button__label {
+    color: var(--md-sys-color-primary);
+}
+
+.button--text .button__container:hover {
+    background: var(--md-state-layers-primary-opacity-008);
+}
+
+.button--text .button__contaner:focus,
+.button--text .button__container:active {
+    background: var(--md-state-layers-primary-opacity-012);
+}
+
