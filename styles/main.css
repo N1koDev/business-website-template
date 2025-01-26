@@ -21,10 +21,14 @@
 @import url('themes/material-theme/state-layers.css');
 
 /* Importando componentes de botões */
-@import url('/components/buttons/base/base.styles.css');
-@import url('/components/buttons/primary/primary.styles.css');
-@import url('/components/buttons/outlined/outlined.styles.css');
-@import url('/components/buttons/text/text.styles.css');
+@import url('/components/buttons/base/button.base.css');
+@import url('/components/buttons/base/button.interactions.css');
+@import url('/components/buttons/modifiers/button.filled.css');
+@import url('/components/buttons/modifiers/button.outlined.css');
+@import url('/components/buttons/modifiers/button.tonal.css');
+@import url('/components/buttons/modifiers/button.text.css');
+@import url('/components/buttons/icon/icon.base.css');
+
 
 
 /* Importando recursos das funcionalidades */

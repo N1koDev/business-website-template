@@ -55,3 +55,7 @@
     border-radius: 1.75rem;
     background: url("/assets/images/illustrations/image-background.png") lightgray 50% / cover no-repeat;
 }
+
+.features__highlight {
+    color: var(--md-sys-color-primary);
+}

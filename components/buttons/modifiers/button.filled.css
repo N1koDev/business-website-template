@@ -1,4 +1,4 @@
-.button--primary {
+.button--filled {
     background: var(--md-sys-color-primary);
 }
 
@@ -22,15 +22,15 @@
     animation-duration: 200ms;
 }
 
-.button--primary .button__container:hover {
+.button--filled .button__container:hover {
     background: var(--md-state-layers-on-primary-opacity-008);
 }
 
-.button--primary .button__container:focus,
-.button--primary .button__container:active {
+.button--filled .button__container:focus,
+.button--filled .button__container:active {
     background: var(--md-state-layers-on-primary-opacity-012);
 }
 
-.button--primary .button__label {
+.button--filled .button__label {
     color: var(--md-sys-color-on-primary);
 }

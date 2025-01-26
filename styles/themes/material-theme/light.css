@@ -55,4 +55,7 @@
   
   --md-state-layers-on-primary-opacity-008: rgba(255, 255, 255, 0.08);
   --md-state-layers-on-primary-opacity-012: rgba(255, 255, 255, 0.12);
+  
+  --md-state-layers-on-secondary-container-opacity-008: rgba(31, 64, 105, 0.08);
+  --md-state-layers-on-secondary-container-opacity-012: rgba(31, 64, 105, 0.12);
 }
