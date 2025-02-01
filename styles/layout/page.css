@@ -1,10 +1,5 @@
 /* layout/body.css */
 
-body {
-    height: 100%;
-    padding-bottom: 0;
-}
-
 .page {
     /* Layout */
     display: flex;
@@ -13,8 +8,29 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
-    align-self: stretch;
+    width: 100%;
     
     /* Style */
     background: var(--md-sys-color-surface);
+}
+
+.page__main {
+    padding-top: 5.625rem;
+    width: 100%;
+}
+
+@media (max-width: 834px) {
+    .page {
+        padding-top: 2.03125rem;
+    }
+    
+    .page__main {
+        padding-top: 2.8125rem;
+    }
+}
+
+@media (max-width: 402px) {
+    .page__main {
+        padding-top: 0rem;
+    }
 }

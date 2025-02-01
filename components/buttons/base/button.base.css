@@ -36,4 +36,8 @@
     font-weight: 500;
     line-height: 1.25rem; /* 142.857% */
     letter-spacing: 0.00625rem;
+    
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Corta o texto se necessário */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for longo */
 }

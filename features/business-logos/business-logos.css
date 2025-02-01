@@ -2,23 +2,15 @@
     /* Layout */
     grid-column: 1 / -1; /* Garante que ocupe todo o grid */
     width: 100%; /* Preenche toda a largura da tela */
-    display: grid;
-    padding: 1.25rem 0rem 3.75rem 0rem;
-    gap: 3.125rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;  /* Alinha o conteúdo verticalmente */
     justify-items: center; /* Alinha o conteúdo horizontalmente */
-    
+    padding: 1.25rem 0rem 3.75rem 0rem;
+    gap: 3.125rem;
+
     /* Backdrop */
     background: linear-gradient(180deg, var(--md-sys-color-surface) 20%, var(--md-sys-color-surface-tint) 20%);
-    
-    grid-template-columns: 1fr; /* Uma única coluna */
-    grid-template-areas: 
-        "logos"
-        "info";
-    
-    /* Isso garante que a parte interna tenha uma largura máxima */
-    position: relative;
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
 }
 
 .page__clients-logos {
@@ -41,9 +33,14 @@
 }
 
 .page__clients-logo--3portals, .page__clients-logo--catalxg,
-.page__clients-logo--alphawave, .page__clients-logo--railspeed {
+ .page__clients-logo--railspeed {
     width: 152px;
     height: 48px;
+}
+
+.page__clients-logo--alphawave {
+    width: 188px;
+    height: 48px; 
 }
 
 .page__clients-info {
@@ -52,7 +49,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5625rem;
-    max-width: 77.85rem;
+    max-width: 1152px;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "description";
@@ -65,7 +62,7 @@
 }
 
 .page__clients-description {
-    max-width: 77.85rem;
+    width: 100%;
     align-self: stretch;
     color: var(--md-sys-color-inverse-on-surface);
 }
@@ -80,46 +77,63 @@
     background: var(--md-sys-color-surface);
 }
 
-/* Responsividade para dispositivos móveis e tablets */
-@media (max-width: 768px) {
+
+@media (max-width: 1152px) {
+    .page__clients-logos {
+        /* Layout */
+        padding: 3.125rem 3.125rem;
+        gap: 1rem;
+    }
+    
+    .page__clients-description {
+        max-width: 964.8px;
+    }
+}
+
+@media (max-width: 834px) {
+    .page__clients-logos {
+        /* Layout */
+        padding: 3.125rem 3.125rem;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 524px;
+    }
+    
+    .page__clients-info {
+        max-width: 698.48px;
+    }
+    
+    .page__clients-title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 2.25rem; /* 128.571% */
+    }
+    
+    .page__clients-description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.25rem; /* 111.111% */
+        letter-spacing: 0.01563rem;
+    }
+}
+
+@media (max-width: 402px) {
     .page__clients {
-        padding: 1.25rem 5%;
+            background: linear-gradient(180deg, var(--md-sys-color-surface) 25%, var(--md-sys-color-surface-tint) 20%);
     }
     
     .page__clients-logos {
-        padding: 1.5rem;
-        grid-template-columns: repeat(2, 1fr); /* Logos em 2 colunas */
+        grid-template-columns: repeat(1, 1fr);
     }
     
-    .page__clients-title {
-        font-size: 1.5rem; /* Ajuste no tamanho da fonte */
-    }
-
-    .page__clients-description {
-        font-size: 1rem; /* Ajuste no tamanho da fonte */
-    }
-
     .page__clients-info {
-        padding: 0 1rem;
+        max-width: 342px;
+    }
+    
+    .page__clients-description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5rem; /* 133.333% */
+        letter-spacing: 0.03125rem;
     }
 }
 
-/* Responsividade para telas menores, como celulares */
-@media (max-width: 480px) {
-    .page__clients-logos {
-        padding: 1rem;
-        grid-template-columns: 1fr; /* Logos em uma coluna */
-    }
-
-    .page__clients-title {
-        font-size: 1.25rem; /* Redução do tamanho da fonte */
-    }
-
-    .page__clients-description {
-        font-size: 0.875rem; /* Redução do tamanho da fonte */
-    }
-
-    .page__clients-info {
-        padding: 0 0.5rem;
-    }
-}

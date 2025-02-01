@@ -29,6 +29,10 @@
     line-height: 1.5; /* Exemplo de altura de linha */
 }
 
+.footer__email-settings-text {
+    text-align: center;
+}
+
 .footer__bottom {
     height: 3.125rem;
     background: var(--md-sys-color-surface-tint);
