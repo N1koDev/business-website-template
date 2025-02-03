@@ -1,0 +1,39 @@
+/* Importando arquivos de variáveis e reset */
+@import url('base/normalize.css');
+@import url('base/material-design.css');
+@import url('base/typography.css');
+@import url('base/variables.css');
+
+/* Importando layouts principais */
+@import url('layout/grid.css');
+@import url('layout/header.css');
+@import url('layout/footer.css');
+@import url('layout/page.css');
+
+/* Meterial Desing */
+@import url('themes/material-theme/light.css');
+@import url('themes/material-theme/light-hc.css');
+@import url('themes/material-theme/light-mc.css');
+@import url('themes/material-theme/dark.css');
+@import url('themes/material-theme/dark-hc.css');
+@import url('themes/material-theme/dark-mc.css');
+@import url('themes/material-theme/palettes.css');
+@import url('themes/material-theme/state-layers.css');
+
+/* Importando componentes de botões */
+@import url('/components/buttons/base/button.base.css');
+@import url('/components/buttons/base/button.interactions.css');
+@import url('/components/buttons/modifiers/button.filled.css');
+@import url('/components/buttons/modifiers/button.outlined.css');
+@import url('/components/buttons/modifiers/button.tonal.css');
+@import url('/components/buttons/modifiers/button.text.css');
+@import url('/components/buttons/icon/icon.base.css');
+
+
+
+/* Importando recursos das funcionalidades */
+@import url('/features/business-logos/business-logos.css');
+@import url('/features/features/features.css');
+@import url('/features/intro/intro.css');
+@import url('/features/stats/stats.css');
+@import url('/features/testimonials/testimonials.css');

@@ -1,0 +1,127 @@
+/* layout/hero-section.css */
+
+.page__intro {
+    grid-column: 1 / -1; /* Garante que ocupe todo o grid */
+    max-width: 1142px;
+    width: 100%; /* Responsivo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex; /* Usa flex para alinhar texto e imagem */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    gap: 1.25rem;
+    align-self: stretch;
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1875rem;
+    max-width: 47.5%; /* Limita o tamanho da imagem */
+}
+
+.intro__image {
+    max-width: 47.5%; /* Limita o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    flex: 1 0 0;
+    align-self: stretch;
+    
+    border-radius: 1.75rem;
+    background: url("/assets/images/illustrations/image-background.png") lightgray 50% / cover no-repeat;
+}
+
+.intro__title {
+    align-self: stretch;
+    font-weight: var(--font-weight-medium);
+}
+
+.intro__highlight {
+    color: var(--md-sys-color-primary);
+}
+
+.intro__highlight {
+  display: block; /* Faz o <span> ser exibido como um bloco, forçando a quebra de linha */
+}
+
+
+.intro__description {
+    align-self: stretch;
+}
+
+.intro__nav {
+    display: flex;
+    height: 2.5rem;
+    flex-direction: row;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+
+@media (max-width: 1152px) {
+    .page__intro {
+        max-width: 964.8px;
+    }
+}
+
+@media (max-width: 834px) {
+    .page__intro {
+        max-width: 698.48px;
+    }
+    
+    .intro__title {
+        font-family: Roboto;
+        font-size: 2.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.75rem; /* 100% */
+    }
+    
+    .intro__description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 412px) {
+    
+    .page__intro {
+        display: flex;
+        padding: 0.75rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1.25rem;
+        align-self: stretch;
+        max-width: 342px;
+        
+        border-radius: 0.75rem;
+        background: var(--md-sys-color-surface-container-high);
+    }
+    
+    .intro__text {
+        max-width: 100%;
+    }
+    
+    .intro__title {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 2.75rem;
+    }
+    
+    .intro__image{
+        max-width: 100%; /* Evita que a imagem ultrapasse os limites do container */
+        min-height: 20.3125rem; /* Mantém a proporção da imagem */
+        flex: 0;
+        border-radius: 0.5rem;
+    }
+    
+    .intro__nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        width: 100%;
+        max-width: 342px;
+    }
+    
+    .intro__nav .button {
+        width: 100%;
+    }
+
+}

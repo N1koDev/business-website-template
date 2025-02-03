@@ -1,0 +1,139 @@
+.page__clients {
+    /* Layout */
+    grid-column: 1 / -1; /* Garante que ocupe todo o grid */
+    width: 100%; /* Preenche toda a largura da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Alinha o conteúdo verticalmente */
+    justify-items: center; /* Alinha o conteúdo horizontalmente */
+    padding: 1.25rem 0rem 3.75rem 0rem;
+    gap: 3.125rem;
+
+    /* Backdrop */
+    background: linear-gradient(180deg, var(--md-sys-color-surface) 20%, var(--md-sys-color-surface-tint) 20%);
+}
+
+.page__clients-logos {
+    /* Layout */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr); /* Quatro logos por linha, ajustável */
+    padding: 3.125rem 6.25rem;
+    max-width: 64.33313rem;
+    border-radius: 0.9375rem;
+    background: var(--md-sys-color-surface-bright);
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.page__clients-logo {
+    fill: var(--md-sys-color-on-surface-variant);
+    opacity: 0.84;
+}
+
+.page__clients-logo--3portals, .page__clients-logo--catalxg,
+ .page__clients-logo--railspeed {
+    width: 152px;
+    height: 48px;
+}
+
+.page__clients-logo--alphawave {
+    width: 188px;
+    height: 48px; 
+}
+
+.page__clients-info {
+    /* Layout */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    max-width: 1152px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "description";
+}
+
+.page__clients-title {
+    font-weight: var(--font-weight-medium);
+    color: var(--md-sys-color-inverse-on-surface);
+    width: 100%;
+}
+
+.page__clients-description {
+    width: 100%;
+    align-self: stretch;
+    color: var(--md-sys-color-inverse-on-surface);
+}
+
+.page__clients-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page__clients-button {
+    background: var(--md-sys-color-surface);
+}
+
+
+@media (max-width: 1152px) {
+    .page__clients-logos {
+        /* Layout */
+        padding: 3.125rem 3.125rem;
+        gap: 1rem;
+    }
+    
+    .page__clients-description {
+        max-width: 964.8px;
+    }
+}
+
+@media (max-width: 834px) {
+    .page__clients-logos {
+        /* Layout */
+        padding: 3.125rem 3.125rem;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 524px;
+    }
+    
+    .page__clients-info {
+        max-width: 698.48px;
+    }
+    
+    .page__clients-title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 2.25rem; /* 128.571% */
+    }
+    
+    .page__clients-description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.25rem; /* 111.111% */
+        letter-spacing: 0.01563rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .page__clients {
+            background: linear-gradient(180deg, var(--md-sys-color-surface) 25%, var(--md-sys-color-surface-tint) 20%);
+    }
+    
+    .page__clients-logos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .page__clients-info {
+        max-width: 342px;
+    }
+    
+    .page__clients-description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5rem; /* 133.333% */
+        letter-spacing: 0.03125rem;
+    }
+}
+

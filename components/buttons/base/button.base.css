@@ -1,0 +1,43 @@
+/* Base Button Styles */
+.button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    background: none;
+    padding: 0;
+    
+    border: none; /* Remove a borda padrão */
+    border-radius: 6.25rem;
+}
+
+.button__container {
+    display: flex;
+    padding: 0.625rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 6.25rem;
+    
+    background: none;
+}
+
+.button__label {
+    color: var(--md-sys-color-on-surface);
+    text-align: center;
+    
+    /* material-theme/label/large */
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 142.857% */
+    letter-spacing: 0.00625rem;
+    
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Corta o texto se necessário */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for longo */
+}

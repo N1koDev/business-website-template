@@ -1,0 +1,50 @@
+/* layout/grid.css */
+
+.page__main {
+    display: grid;
+    grid-template-areas: 
+        "intro intro intro intro intro intro"
+        "clients clients clients clients clients clients"
+        "features features features features features features"
+        "stats stats stats stats stats stats"
+        "testimonials testimonials testimonials testimonials testimonials testimonials";
+    grid-row-gap: 3.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    place-items: center;
+}
+
+
+/* hero-section */
+
+.intro {
+  grid-area: intro;
+}
+
+/*  */
+
+.clients {
+    grid-area: clients;
+}
+
+/*  */
+
+.description {
+  grid-area: description;
+}
+
+/*  */
+
+.features {
+    grid-area: features;
+}
+
+/*  */
+
+.stats {
+    grid-area: stats;
+}
+
+.testimonials {
+    grid-area: testimonials;
+}
+
