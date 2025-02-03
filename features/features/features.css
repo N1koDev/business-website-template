@@ -89,7 +89,7 @@
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 412px) {
     .page__features {
         padding: 3.125rem 0rem;
         gap: 6.25rem;

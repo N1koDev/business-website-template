@@ -51,7 +51,7 @@
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 412px) {
     .page__stats__content {
         max-width: 342px;
         grid-template-columns: repeat(1, 1fr); /* 3 colunas */

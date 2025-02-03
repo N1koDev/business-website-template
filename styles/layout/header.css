@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 412px) {
     .header {
         max-width: 342px;
     }
